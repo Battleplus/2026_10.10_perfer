@@ -59,7 +59,9 @@ CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
 
 汇总报告和曲线：[实验报告](results/study_report/report.md)、[策略评估曲线](results/study_report/policy_eval.png)、[奖励损失曲线](results/study_report/reward_loss.png)。GT、MR、MAPT 三组 1M 策略运行均已完成，原始 stdout、summary 和 TensorBoard 事件已同步到 `results/raw/results/`；三组比较见报告。结果是 seed 1 的教学运行，不代表论文的多 seed 结论。
 
-策略基准脚本可按需重跑；必须提供与 MAPT 配套的环境、依赖及 MR/MAPT 奖励模型 checkpoint。该 checkpoint 没有包含在本仓库中。可通过 `MR_REWARD_MODEL`、`MAPT_REWARD_MODEL` 提供路径；默认使用仓库下的 `results/reward_short/...` 约定位置。脚本支持 `MAPT_ROOT`、`PYTHON_BIN`、`SC2PATH` 和 `CUDA_VISIBLE_DEVICES` 环境变量。
+策略基准脚本可按需重跑；运行时仍需提供与 MAPT 配套的环境和依赖。短训 MR/MAPT 奖励模型 checkpoint 已包含在仓库默认路径中，也可通过 `MR_REWARD_MODEL`、`MAPT_REWARD_MODEL` 覆盖。脚本支持 `MAPT_ROOT`、`PYTHON_BIN`、`SC2PATH` 和 `CUDA_VISIBLE_DEVICES` 环境变量。
+
+短训 MR 和 MAPT 奖励模型 checkpoint 已随仓库发布，默认路径可直接解析。它们来自 seed 1 的 3 epoch 教学短训；按验证损失选择的 checkpoint 分别是 MR epoch 2（验证损失 `0.5746719`）和 MAPT epoch 0（验证损失 `0.0667654`）。四个权重文件的相对路径、大小、SHA-256、配置来源及选择依据见[checkpoint 清单](results/reward_short/checkpoint_manifest.json)；训练标量见 [MR](results/raw/mr_reward_seed1_scalars.csv) 和 [MAPT](results/raw/mapt_reward_seed1_scalars.csv)。MAPT 配置记录在 checkpoint 元数据中；MR checkpoint 只保存权重，其配置按固定上游 commit 的默认值还原。该短训结果用于教学和基准复现，不代表多 seed 结论。
 
 ```bash
 cd /path/to/this-repository
@@ -76,4 +78,5 @@ bash scripts/run_policy_queue.sh
 - `diagrams/`：模型数据流与张量形状图
 - `results/`：配置、实验日志和图表
 - `patches/`：针对固定上游 commit 的本地改动
-- `results/raw/`：已同步的原始日志、指标、部分偏好/诊断文件及策略 checkpoint；不包含完整训练环境、地图或短训奖励模型 checkpoint
+- `results/raw/`：已同步的原始日志、指标、部分偏好/诊断文件及策略 checkpoint；不包含完整训练环境或地图
+- `results/reward_short/`：短训 MR/MAPT 奖励模型 checkpoint 与 TensorBoard 事件；文件校验信息见 checkpoint 清单

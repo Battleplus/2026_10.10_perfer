@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "experiment": {
+    "environment": "SMAC 3m",
+    "seed": 1,
+    "epochs_observed": [0, 1, 2],
+    "training_stdout_preserved": false,
+    "scalar_sources": [
+      "results/raw/mr_reward_seed1_scalars.csv",
+      "results/raw/mapt_reward_seed1_scalars.csv"
+    ]
+  },
+  "models": {
+    "MR": {
+      "selection_metric": "reward/eval_rf_loss",
+      "best_epoch": 2,
+      "best_validation_loss": 0.5746719241142273,
+      "best_checkpoint": "results/reward_short/smac/3m/MR/mr_seed1_short/models/reward_model_2.pt",
+      "configuration_provenance": {
+        "type": "fixed_upstream_defaults",
+        "repository": "https://github.com/catezi/MAPT",
+        "commit": "0b4ef2712995681febca7631f9a27e1b0dccccbf",
+        "checkpoint_metadata": "weights_only",
+        "values": {
+          "inner_dim": 256,
+          "action_embd_dim": 64,
+          "rf_lr": 0.0003,
+          "optimizer": "Adam",
+          "agent_individual": false,
+          "activation": "ReLU",
+          "activation_final": "none",
+          "orthogonal_init": false
+        }
+      },
+      "checkpoints": [
+        {
+          "epoch": 0,
+          "source_relative_path": "results/reward_short/smac/3m/MR/mr_seed1_short/models/reward_model_0.pt",
+          "size_bytes": 401487,
+          "sha256": "1261e917a251ffcb10175c97188bbc3d9ab30389b22e4892d9d4918a950b2691",
+          "validation_loss": 0.6456963419914246,
+          "selected": false,
+          "selection_reason": "Not selected: its validation loss is higher than the minimum observed across epochs 0-2."
+        },
+        {
+          "epoch": 1,
+          "source_relative_path": "results/reward_short/smac/3m/MR/mr_seed1_short/models/reward_model_1.pt",
+          "size_bytes": 401487,
+          "sha256": "efbfc8f71481846ce09e2bb7d32ce6600a9905b15e96a28bd097ff40ef142a06",
+          "validation_loss": 0.609107494354248,
+          "selected": false,
+          "selection_reason": "Not selected: its validation loss is higher than the minimum observed across epochs 0-2."
+        },
+        {
+          "epoch": 2,
+          "source_relative_path": "results/reward_short/smac/3m/MR/mr_seed1_short/models/reward_model_2.pt",
+          "size_bytes": 401487,
+          "sha256": "2e36b43be56a4fb91879d029b8f332e08d6a822db2cfdadda2d9644dfc439d1e",
+          "validation_loss": 0.5746719241142273,
+          "selected": true,
+          "selection_reason": "Lowest observed validation loss across epochs 0-2; this is the benchmark default checkpoint."
+        }
+      ]
+    },
+    "MAPT": {
+      "selection_metric": "reward/eval_trans_loss",
+      "best_epoch": 0,
+      "best_validation_loss": 0.06676535308361053,
+      "best_checkpoint": "results/reward_short/smac/3m/MultiPrefTransformerDivide/mapt_seed1_short/models/reward_model_0.pt",
+      "configuration_provenance": {
+        "type": "checkpoint_metadata",
+        "checkpoint_metadata": "contains_model_config_and_smac_3m_dimensions",
+        "values": {
+          "embedding_dim": 256,
+          "action_embd_dim": 64,
+          "n_layer": 1,
+          "n_head": 4,
+          "preference_attention_dim": 256,
+          "medium_process_type": "cat",
+          "use_lstm": false,
+          "use_weighted_sum": true,
+          "learning_rate": 0.0001,
+          "sequence_length": 16,
+          "n_agents": 3,
+          "observation_dim": 64,
+          "n_actions": 9
+        }
+      },
+      "checkpoints": [
+        {
+          "epoch": 0,
+          "source_relative_path": "results/reward_short/smac/3m/MultiPrefTransformerDivide/mapt_seed1_short/models/reward_model_0.pt",
+          "size_bytes": 11446175,
+          "sha256": "227a550d8e368cee15d97476614870041064cacef475810d5acf3b12c8dce00d",
+          "validation_loss": 0.06676535308361053,
+          "selected": true,
+          "selection_reason": "Lowest observed validation loss across epochs 0-2; this is the benchmark default checkpoint."
+        }
+      ]
+    }
+  }
+}
