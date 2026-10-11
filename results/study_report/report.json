@@ -1,0 +1,2927 @@
+{
+  "manifest": "reporting/manifest.json",
+  "runs": [
+    {
+      "id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 10000,
+      "actual_env_steps": 10020,
+      "runtime_seconds": null,
+      "data_source": "SMAC 3m 任务真值奖励；不使用偏好数据。",
+      "notes": "10k 对照，8 rollout threads，5 个 eval episodes；对应远端 event 位于 results/policy_bench/results/StarCraft2/3m/mat/gt_mat_seed1_10k/run1/logs/。",
+      "reward_log": null,
+      "policy_stdout": "../results/raw/results/policy_bench/gt_mat_seed1_10k.stdout.log",
+      "scalars": "../results/raw/gt_3m_seed1_10k_scalars.csv",
+      "reward_points": 0,
+      "policy_points": 10,
+      "observed_env_steps": 9660,
+      "stdout_last_step": 9660,
+      "last_eval_step": 9660
+    },
+    {
+      "id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 100000,
+      "actual_env_steps": 99840,
+      "runtime_seconds": 209.25,
+      "data_source": "SMAC 3m 任务真值奖励；不使用偏好数据。",
+      "notes": "单 seed 教学基准；8 rollout threads，5 个 eval episodes；实际训练 208 个 rollout，共 99840 环境步。对应远端 event 位于 results/policy_100k/results/StarCraft2/3m/mat/gt_mat_seed1_100k/run1/logs/。",
+      "reward_log": null,
+      "policy_stdout": "../results/raw/results/policy_100k/gt_mat_seed1_100k.stdout.log",
+      "scalars": "../results/raw/gt_3m_seed1_100k_scalars.csv",
+      "reward_points": 0,
+      "policy_points": 10,
+      "observed_env_steps": 96480,
+      "stdout_last_step": 96480,
+      "last_eval_step": 96480
+    },
+    {
+      "id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 100000,
+      "actual_env_steps": 99840,
+      "runtime_seconds": 224.28,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "notes": "奖励 checkpoint 为 MR epoch 2；单 seed 教学实验，8 rollout threads，5 个 eval episodes；实际训练 208 个 rollout，共 99840 环境步。对应远端 event 目录: results/policy_mr_100k/results/StarCraft2/3m/mat/mr_seed1_100k/run1/logs/。",
+      "reward_log": null,
+      "policy_stdout": "../results/raw/results/policy_mr_100k/mr_seed1_100k.stdout.log",
+      "scalars": "../results/raw/mr_3m_seed1_100k_scalars.csv",
+      "reward_points": 0,
+      "policy_points": 10,
+      "observed_env_steps": 96480,
+      "stdout_last_step": 96480,
+      "last_eval_step": 96480
+    },
+    {
+      "id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 100000,
+      "actual_env_steps": 99840,
+      "runtime_seconds": 240.35,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "notes": "奖励 checkpoint 为 MAPT epoch 0，preference_medium_process_type=cat；单 seed 教学实验，8 rollout threads，5 个 eval episodes；实际训练 208 个 rollout，共 99840 环境步。对应远端 event 位于 results/policy_mapt_100000/results/StarCraft2/3m/mat/mapt_seed1_100000/run1/logs/。",
+      "reward_log": null,
+      "policy_stdout": "../results/raw/results/policy_mapt_100k/mapt_seed1_100k.stdout.log",
+      "scalars": "../results/raw/mapt_3m_seed1_100k_scalars.csv",
+      "reward_points": 0,
+      "policy_points": 10,
+      "observed_env_steps": 96480,
+      "stdout_last_step": 96480,
+      "last_eval_step": 96480
+    },
+    {
+      "id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 1000000,
+      "actual_env_steps": 999840,
+      "runtime_seconds": 1895.44,
+      "data_source": "SMAC 3m 任务真值奖励；不使用偏好数据。",
+      "notes": "1M 配置；2083 updates × 8 rollout threads × episode_length 60 = 999840 actual transitions；stdout 最后周期采样 998880（update 2080/2083）；每次 eval 为 5 局，单 seed。",
+      "reward_log": null,
+      "policy_stdout": "../results/raw/results/policy_gt_1m/gt_seed1_1m.stdout.log",
+      "scalars": "../results/raw/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/summary.json",
+      "reward_points": 0,
+      "policy_points": 84,
+      "observed_env_steps": 998880,
+      "stdout_last_step": 998880,
+      "last_eval_step": 984480
+    },
+    {
+      "id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 1000000,
+      "actual_env_steps": 999840,
+      "runtime_seconds": 2114.13,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "notes": "MR (MA-MLP)；1M 配置；2083 updates × 8 rollout threads × episode_length 60 = 999840 actual transitions；stdout 最后周期采样 998880（update 2080/2083）；每次 eval 为 5 局，单 seed。",
+      "reward_log": null,
+      "policy_stdout": "../results/raw/results/policy_mr_1m/mr_seed1_1m.stdout.log",
+      "scalars": "../results/raw/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/summary.json",
+      "reward_points": 0,
+      "policy_points": 84,
+      "observed_env_steps": 998880,
+      "stdout_last_step": 998880,
+      "last_eval_step": 984480
+    },
+    {
+      "id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 1000000,
+      "actual_env_steps": 999840,
+      "runtime_seconds": 2333.58,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "notes": "1M 配置；2083 updates × 8 rollout threads × episode_length 60 = 999840 actual transitions；stdout 最后周期采样 998880（update 2080/2083）；每次 eval 为 5 局，单 seed。",
+      "reward_log": null,
+      "policy_stdout": "../results/raw/results/policy_mapt_1m/mapt_seed1_1m.stdout.log",
+      "scalars": "../results/raw/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/summary.json",
+      "reward_points": 0,
+      "policy_points": 84,
+      "observed_env_steps": 998880,
+      "stdout_last_step": 998880,
+      "last_eval_step": 984480
+    },
+    {
+      "id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": null,
+      "actual_env_steps": null,
+      "runtime_seconds": null,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "notes": "3 epochs；策略使用 reward_model_2.pt；对应远端 event 目录: results/reward_short/smac/3m/MR/mr_seed1_short/logs/。原始训练 stdout 未留存。",
+      "reward_log": null,
+      "policy_stdout": null,
+      "scalars": "../results/raw/mr_reward_seed1_scalars.csv",
+      "reward_points": 6,
+      "policy_points": 0
+    },
+    {
+      "id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": null,
+      "actual_env_steps": null,
+      "runtime_seconds": null,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "notes": "3 epochs；策略使用 reward_model_0.pt，medium_process_type=cat；对应远端 event 目录: results/reward_short/smac/3m/MultiPrefTransformerDivide/mapt_seed1_short/logs/。原始训练 stdout 未留存。",
+      "reward_log": null,
+      "policy_stdout": null,
+      "scalars": "../results/raw/mapt_reward_seed1_scalars.csv",
+      "reward_points": 6,
+      "policy_points": 0
+    }
+  ],
+  "reward_metrics": [
+    {
+      "run_id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "seed": 1,
+      "step": 0,
+      "metric": "eval_loss",
+      "value": 0.6456963419914246,
+      "tag": "reward/eval_rf_loss",
+      "epoch": 0
+    },
+    {
+      "run_id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "seed": 1,
+      "step": 1,
+      "metric": "eval_loss",
+      "value": 0.609107494354248,
+      "tag": "reward/eval_rf_loss",
+      "epoch": 1
+    },
+    {
+      "run_id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "seed": 1,
+      "step": 2,
+      "metric": "eval_loss",
+      "value": 0.5746719241142273,
+      "tag": "reward/eval_rf_loss",
+      "epoch": 2
+    },
+    {
+      "run_id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "seed": 1,
+      "step": 0,
+      "metric": "train_loss",
+      "value": 0.7164480090141296,
+      "tag": "reward/rf_loss",
+      "epoch": 0
+    },
+    {
+      "run_id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "seed": 1,
+      "step": 1,
+      "metric": "train_loss",
+      "value": 0.6241506338119507,
+      "tag": "reward/rf_loss",
+      "epoch": 1
+    },
+    {
+      "run_id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "seed": 1,
+      "step": 2,
+      "metric": "train_loss",
+      "value": 0.5548787117004395,
+      "tag": "reward/rf_loss",
+      "epoch": 2
+    },
+    {
+      "run_id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 0,
+      "metric": "eval_loss",
+      "value": 0.06676535308361053,
+      "tag": "reward/eval_trans_loss",
+      "epoch": 0
+    },
+    {
+      "run_id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 1,
+      "metric": "eval_loss",
+      "value": 0.46525248885154724,
+      "tag": "reward/eval_trans_loss",
+      "epoch": 1
+    },
+    {
+      "run_id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 2,
+      "metric": "eval_loss",
+      "value": 1.225140929222107,
+      "tag": "reward/eval_trans_loss",
+      "epoch": 2
+    },
+    {
+      "run_id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 0,
+      "metric": "train_loss",
+      "value": 1.9820266962051392,
+      "tag": "reward/trans_loss",
+      "epoch": 0
+    },
+    {
+      "run_id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 1,
+      "metric": "train_loss",
+      "value": 0.21423228085041046,
+      "tag": "reward/trans_loss",
+      "epoch": 1
+    },
+    {
+      "run_id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 2,
+      "metric": "train_loss",
+      "value": 0.2154087871313095,
+      "tag": "reward/trans_loss",
+      "epoch": 2
+    }
+  ],
+  "policy_metrics": [
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 60,
+      "metric": "eval_return",
+      "value": 2.104109525680542,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 2460,
+      "metric": "eval_return",
+      "value": 4.0547943115234375,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 4860,
+      "metric": "eval_return",
+      "value": 6.2246575355529785,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 7260,
+      "metric": "eval_return",
+      "value": 8.39452075958252,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 9660,
+      "metric": "eval_return",
+      "value": 15.002739906311035,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 60,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 2460,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 4860,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 7260,
+      "metric": "win_rate",
+      "value": 0.20000000298023224,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "seed": 1,
+      "step": 9660,
+      "metric": "win_rate",
+      "value": 0.6000000238418579,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 480,
+      "metric": "eval_return",
+      "value": 2.038356065750122,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "eval_return",
+      "value": 14.794520378112793,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "eval_return",
+      "value": 14.936985969543457,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "win_rate",
+      "value": 0.6000000238418579,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "win_rate",
+      "value": 0.6000000238418579,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 480,
+      "metric": "eval_return",
+      "value": 1.6657534837722778,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 24480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 48480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 72480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 96480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 24480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 48480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 72480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "seed": 1,
+      "step": 96480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 480,
+      "metric": "eval_return",
+      "value": 1.117808222770691,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "eval_return",
+      "value": 8.865753173828125,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "eval_return",
+      "value": 5.435616493225098,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "eval_return",
+      "value": 6.706849098205566,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "eval_return",
+      "value": 6.2246575355529785,
+      "tag": "eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "win_rate",
+      "value": 0.20000000298023224,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 480,
+      "metric": "eval_return",
+      "value": 1.906849315068493,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "eval_return",
+      "value": 17.402739726027395,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "eval_return",
+      "value": 17.66575342465753,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 120480,
+      "metric": "eval_return",
+      "value": 17.6,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 144480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 168480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 192480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 216480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 240480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 264480,
+      "metric": "eval_return",
+      "value": 17.66575342465753,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 288480,
+      "metric": "eval_return",
+      "value": 15.199999999999998,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 312480,
+      "metric": "eval_return",
+      "value": 17.53424657534247,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 336480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 360480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 384480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 408480,
+      "metric": "eval_return",
+      "value": 17.53424657534247,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 432480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 456480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 480480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 504480,
+      "metric": "eval_return",
+      "value": 17.53424657534247,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 528480,
+      "metric": "eval_return",
+      "value": 17.53424657534247,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 552480,
+      "metric": "eval_return",
+      "value": 17.46849315068493,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 576480,
+      "metric": "eval_return",
+      "value": 17.66575342465753,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 600480,
+      "metric": "eval_return",
+      "value": 17.66575342465753,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 624480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 648480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 672480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 696480,
+      "metric": "eval_return",
+      "value": 17.6,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 720480,
+      "metric": "eval_return",
+      "value": 15.265753424657534,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 744480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 768480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 792480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 816480,
+      "metric": "eval_return",
+      "value": 17.6,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 840480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 864480,
+      "metric": "eval_return",
+      "value": 17.6,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 888480,
+      "metric": "eval_return",
+      "value": 17.66575342465753,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 912480,
+      "metric": "eval_return",
+      "value": 17.66575342465753,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 936480,
+      "metric": "eval_return",
+      "value": 14.673972602739724,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 960480,
+      "metric": "eval_return",
+      "value": 20.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 984480,
+      "metric": "eval_return",
+      "value": 17.66575342465753,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 120480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 144480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 168480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 192480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 216480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 240480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 264480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 288480,
+      "metric": "win_rate",
+      "value": 0.6,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 312480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 336480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 360480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 384480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 408480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 432480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 456480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 480480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 504480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 528480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 552480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 576480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 600480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 624480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 648480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 672480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 696480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 720480,
+      "metric": "win_rate",
+      "value": 0.6,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 744480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 768480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 792480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 816480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 840480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 864480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 888480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 912480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 936480,
+      "metric": "win_rate",
+      "value": 0.6,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 960480,
+      "metric": "win_rate",
+      "value": 1.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "seed": 1,
+      "step": 984480,
+      "metric": "win_rate",
+      "value": 0.8,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 480,
+      "metric": "eval_return",
+      "value": 1.6657534246575338,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 24480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 48480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 72480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 96480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 120480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 144480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 168480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 192480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 216480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 240480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 264480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 288480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 312480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 336480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 360480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 384480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 408480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 432480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 456480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 480480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 504480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 528480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 552480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 576480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 600480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 624480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 648480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 672480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 696480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 720480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 744480,
+      "metric": "eval_return",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 768480,
+      "metric": "eval_return",
+      "value": 6.509589041095888,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 792480,
+      "metric": "eval_return",
+      "value": 8.778082191780818,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 816480,
+      "metric": "eval_return",
+      "value": 5.13972602739726,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 840480,
+      "metric": "eval_return",
+      "value": 4.295890410958903,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 864480,
+      "metric": "eval_return",
+      "value": 4.427397260273973,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 888480,
+      "metric": "eval_return",
+      "value": 4.613698630136986,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 912480,
+      "metric": "eval_return",
+      "value": 4.613698630136984,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 936480,
+      "metric": "eval_return",
+      "value": 4.55890410958904,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 960480,
+      "metric": "eval_return",
+      "value": 4.778082191780822,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 984480,
+      "metric": "eval_return",
+      "value": 4.7671232876712315,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 24480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 48480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 72480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 96480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 120480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 144480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 168480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 192480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 216480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 240480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 264480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 288480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 312480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 336480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 360480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 384480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 408480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 432480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 456480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 480480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 504480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 528480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 552480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 576480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 600480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 624480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 648480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 672480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 696480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 720480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 744480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 768480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 792480,
+      "metric": "win_rate",
+      "value": 0.2,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 816480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 840480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 864480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 888480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 912480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 936480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 960480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "seed": 1,
+      "step": 984480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 480,
+      "metric": "eval_return",
+      "value": 1.1178082191780823,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "eval_return",
+      "value": 8.865753424657534,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "eval_return",
+      "value": 5.4356164383561625,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "eval_return",
+      "value": 6.706849315068491,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "eval_return",
+      "value": 6.224657534246573,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 120480,
+      "metric": "eval_return",
+      "value": 6.783561643835613,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 144480,
+      "metric": "eval_return",
+      "value": 6.64109589041096,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 168480,
+      "metric": "eval_return",
+      "value": 6.378082191780819,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 192480,
+      "metric": "eval_return",
+      "value": 6.432876712328764,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 216480,
+      "metric": "eval_return",
+      "value": 6.739726027397258,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 240480,
+      "metric": "eval_return",
+      "value": 6.038356164383561,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 264480,
+      "metric": "eval_return",
+      "value": 6.520547945205479,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 288480,
+      "metric": "eval_return",
+      "value": 6.312328767123286,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 312480,
+      "metric": "eval_return",
+      "value": 6.586301369863014,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 336480,
+      "metric": "eval_return",
+      "value": 5.753424657534245,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 360480,
+      "metric": "eval_return",
+      "value": 6.706849315068492,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 384480,
+      "metric": "eval_return",
+      "value": 6.158904109589039,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 408480,
+      "metric": "eval_return",
+      "value": 6.630136986301368,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 432480,
+      "metric": "eval_return",
+      "value": 6.367123287671233,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 456480,
+      "metric": "eval_return",
+      "value": 6.235616438356163,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 480480,
+      "metric": "eval_return",
+      "value": 6.509589041095889,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 504480,
+      "metric": "eval_return",
+      "value": 6.586301369863012,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 528480,
+      "metric": "eval_return",
+      "value": 6.180821917808217,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 552480,
+      "metric": "eval_return",
+      "value": 6.301369863013698,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 576480,
+      "metric": "eval_return",
+      "value": 6.093150684931505,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 600480,
+      "metric": "eval_return",
+      "value": 6.246575342465752,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 624480,
+      "metric": "eval_return",
+      "value": 5.961643835616436,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 648480,
+      "metric": "eval_return",
+      "value": 5.643835616438356,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 672480,
+      "metric": "eval_return",
+      "value": 9.446575342465755,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 696480,
+      "metric": "eval_return",
+      "value": 5.490410958904108,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 720480,
+      "metric": "eval_return",
+      "value": 5.786301369863012,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 744480,
+      "metric": "eval_return",
+      "value": 6.301369863013698,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 768480,
+      "metric": "eval_return",
+      "value": 6.564383561643833,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 792480,
+      "metric": "eval_return",
+      "value": 5.490410958904108,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 816480,
+      "metric": "eval_return",
+      "value": 6.772602739726025,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 840480,
+      "metric": "eval_return",
+      "value": 5.786301369863012,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 864480,
+      "metric": "eval_return",
+      "value": 6.64109589041096,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 888480,
+      "metric": "eval_return",
+      "value": 5.8410958904109584,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 912480,
+      "metric": "eval_return",
+      "value": 3.912328767123287,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 936480,
+      "metric": "eval_return",
+      "value": 6.378082191780819,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 960480,
+      "metric": "eval_return",
+      "value": 6.323287671232873,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 984480,
+      "metric": "eval_return",
+      "value": 5.917808219178082,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_average_episode_rewards/eval_average_episode_rewards"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 24480,
+      "metric": "win_rate",
+      "value": 0.2,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 48480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 72480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 96480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 120480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 144480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 168480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 192480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 216480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 240480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 264480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 288480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 312480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 336480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 360480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 384480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 408480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 432480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 456480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 480480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 504480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 528480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 552480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 576480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 600480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 624480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 648480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 672480,
+      "metric": "win_rate",
+      "value": 0.2,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 696480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 720480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 744480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 768480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 792480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 816480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 840480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 864480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 888480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 912480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 936480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 960480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    },
+    {
+      "run_id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "seed": 1,
+      "step": 984480,
+      "metric": "win_rate",
+      "value": 0.0,
+      "tag": "/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/eval_win_rate/eval_win_rate"
+    }
+  ],
+  "images": [
+    "reward_loss.png",
+    "policy_eval.png"
+  ],
+  "issues": []
+}

@@ -1,0 +1,6 @@
+tag,step,value
+eval_average_episode_rewards,480,1.117808222770691
+eval_average_episode_rewards,24480,8.865753173828125
+eval_average_episode_rewards,48480,5.435616493225098
+eval_average_episode_rewards,72480,6.706849098205566
+eval_average_episode_rewards,96480,6.2246575355529785

@@ -1,0 +1,10 @@
+tag,step,value
+epoch,0,0.0
+epoch,1,1.0
+epoch,2,2.0
+reward/eval_trans_loss,0,0.06676535308361053
+reward/eval_trans_loss,1,0.46525248885154724
+reward/eval_trans_loss,2,1.225140929222107
+reward/trans_loss,0,1.9820266962051392
+reward/trans_loss,1,0.21423228085041046
+reward/trans_loss,2,0.2154087871313095

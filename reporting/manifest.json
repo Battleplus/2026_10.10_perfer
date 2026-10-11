@@ -1,0 +1,118 @@
+{
+  "runs": [
+    {
+      "id": "gt_3m_seed1_10k",
+      "method": "GT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 10000,
+      "actual_env_steps": 10020,
+      "data_source": "SMAC 3m 任务真值奖励；不使用偏好数据。",
+      "policy_stdout": "../results/raw/results/policy_bench/gt_mat_seed1_10k.stdout.log",
+      "scalars": "../results/raw/gt_3m_seed1_10k_scalars.csv",
+      "notes": "10k 对照，8 rollout threads，5 个 eval episodes；对应远端 event 位于 results/policy_bench/results/StarCraft2/3m/mat/gt_mat_seed1_10k/run1/logs/。"
+    },
+    {
+      "id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 100000,
+      "actual_env_steps": 99840,
+      "runtime_seconds": 209.25,
+      "data_source": "SMAC 3m 任务真值奖励；不使用偏好数据。",
+      "policy_stdout": "../results/raw/results/policy_100k/gt_mat_seed1_100k.stdout.log",
+      "scalars": "../results/raw/gt_3m_seed1_100k_scalars.csv",
+      "notes": "单 seed 教学基准；8 rollout threads，5 个 eval episodes；实际训练 208 个 rollout，共 99840 环境步。对应远端 event 位于 results/policy_100k/results/StarCraft2/3m/mat/gt_mat_seed1_100k/run1/logs/。"
+    },
+    {
+      "id": "mr_3m_seed1_100k",
+      "method": "MR",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 100000,
+      "actual_env_steps": 99840,
+      "runtime_seconds": 224.28,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "policy_stdout": "../results/raw/results/policy_mr_100k/mr_seed1_100k.stdout.log",
+      "scalars": "../results/raw/mr_3m_seed1_100k_scalars.csv",
+      "notes": "奖励 checkpoint 为 MR epoch 2；单 seed 教学实验，8 rollout threads，5 个 eval episodes；实际训练 208 个 rollout，共 99840 环境步。对应远端 event 目录: results/policy_mr_100k/results/StarCraft2/3m/mat/mr_seed1_100k/run1/logs/。"
+    },
+    {
+      "id": "mapt_3m_seed1_100k",
+      "method": "MAPT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 100000,
+      "actual_env_steps": 99840,
+      "runtime_seconds": 240.35,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "policy_stdout": "../results/raw/results/policy_mapt_100k/mapt_seed1_100k.stdout.log",
+      "scalars": "../results/raw/mapt_3m_seed1_100k_scalars.csv",
+      "notes": "奖励 checkpoint 为 MAPT epoch 0，preference_medium_process_type=cat；单 seed 教学实验，8 rollout threads，5 个 eval episodes；实际训练 208 个 rollout，共 99840 环境步。对应远端 event 位于 results/policy_mapt_100000/results/StarCraft2/3m/mat/mapt_seed1_100000/run1/logs/。"
+    },
+    {
+      "id": "gt_3m_seed1_1m",
+      "method": "GT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 1000000,
+      "actual_env_steps": 999840,
+      "runtime_seconds": 1895.44,
+      "data_source": "SMAC 3m 任务真值奖励；不使用偏好数据。",
+      "policy_stdout": "../results/raw/results/policy_gt_1m/gt_seed1_1m.stdout.log",
+      "scalars": "../results/raw/results/policy_gt_1m/results/StarCraft2/3m/mat/gt_seed1_1m/run1/logs/summary.json",
+      "notes": "1M 配置；2083 updates × 8 rollout threads × episode_length 60 = 999840 actual transitions；stdout 最后周期采样 998880（update 2080/2083）；每次 eval 为 5 局，单 seed。"
+    },
+    {
+      "id": "mr_3m_seed1_1m",
+      "method": "MR",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 1000000,
+      "actual_env_steps": 999840,
+      "runtime_seconds": 2114.13,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "policy_stdout": "../results/raw/results/policy_mr_1m/mr_seed1_1m.stdout.log",
+      "scalars": "../results/raw/results/policy_mr_1m/results/StarCraft2/3m/mat/mr_seed1_1m/run1/logs/summary.json",
+      "notes": "MR (MA-MLP)；1M 配置；2083 updates × 8 rollout threads × episode_length 60 = 999840 actual transitions；stdout 最后周期采样 998880（update 2080/2083）；每次 eval 为 5 局，单 seed。"
+    },
+    {
+      "id": "mapt_3m_seed1_1m",
+      "method": "MAPT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 1000000,
+      "actual_env_steps": 999840,
+      "runtime_seconds": 2333.58,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "policy_stdout": "../results/raw/results/policy_mapt_1m/mapt_seed1_1m.stdout.log",
+      "scalars": "../results/raw/results/policy_mapt_1m/results/StarCraft2/3m/mat/mapt_seed1_1m/run1/logs/summary.json",
+      "notes": "1M 配置；2083 updates × 8 rollout threads × episode_length 60 = 999840 actual transitions；stdout 最后周期采样 998880（update 2080/2083）；每次 eval 为 5 局，单 seed。"
+    },
+    {
+      "id": "mr_reward_seed1_3epoch",
+      "method": "MR",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": null,
+      "actual_env_steps": null,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "reward_model": "MR",
+      "scalars": "../results/raw/mr_reward_seed1_scalars.csv",
+      "notes": "3 epochs；策略使用 reward_model_2.pt；对应远端 event 目录: results/reward_short/smac/3m/MR/mr_seed1_short/logs/。原始训练 stdout 未留存。"
+    },
+    {
+      "id": "mapt_reward_seed1_3epoch",
+      "method": "MAPT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": null,
+      "actual_env_steps": null,
+      "data_source": "results/raw/results/script_teacher_3m_seed1.json 对应脚本教师数据：20 局、22 段、30 对偏好；按 episode 隔离为 24 训练对（episode 0–15）和 6 验证对（episode 16–19）。标签由累计 SMAC 回报比较产生，不是人工反馈或论文数据。",
+      "reward_model": "MAPT",
+      "scalars": "../results/raw/mapt_reward_seed1_scalars.csv",
+      "notes": "3 epochs；策略使用 reward_model_0.pt，medium_process_type=cat；对应远端 event 目录: results/reward_short/smac/3m/MultiPrefTransformerDivide/mapt_seed1_short/logs/。原始训练 stdout 未留存。"
+    }
+  ]
+}

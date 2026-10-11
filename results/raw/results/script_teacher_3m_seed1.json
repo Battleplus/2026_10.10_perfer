@@ -1,0 +1,184 @@
+{
+  "source": "project script teacher; labels compare cumulative SMAC episode reward",
+  "map": "3m",
+  "seed": 1,
+  "episodes": 20,
+  "window_length": 16,
+  "pair_limit": 512,
+  "trajectory_segments": 22,
+  "preference_pairs": 30,
+  "training_pairs": 24,
+  "validation_pairs": 6,
+  "training_episode_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "validation_episode_ids": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "label_counts": {
+    "traj0_preferred": 18,
+    "traj1_preferred": 12,
+    "tie": 0
+  },
+  "episode_summaries": [
+    {
+      "episode_id": 0,
+      "policy": "attack",
+      "episode_return": 2.6301369863013697,
+      "steps": 26,
+      "segments": 1
+    },
+    {
+      "episode_id": 1,
+      "policy": "random",
+      "episode_return": 2.958904109589041,
+      "steps": 22,
+      "segments": 1
+    },
+    {
+      "episode_id": 2,
+      "policy": "attack",
+      "episode_return": 3.9452054794520546,
+      "steps": 26,
+      "segments": 1
+    },
+    {
+      "episode_id": 3,
+      "policy": "random",
+      "episode_return": 1.9726027397260273,
+      "steps": 21,
+      "segments": 1
+    },
+    {
+      "episode_id": 4,
+      "policy": "attack",
+      "episode_return": 3.9452054794520546,
+      "steps": 28,
+      "segments": 1
+    },
+    {
+      "episode_id": 5,
+      "policy": "random",
+      "episode_return": 2.3013698630136985,
+      "steps": 23,
+      "segments": 1
+    },
+    {
+      "episode_id": 6,
+      "policy": "attack",
+      "episode_return": 2.958904109589041,
+      "steps": 26,
+      "segments": 1
+    },
+    {
+      "episode_id": 7,
+      "policy": "random",
+      "episode_return": 1.3150684931506849,
+      "steps": 21,
+      "segments": 1
+    },
+    {
+      "episode_id": 8,
+      "policy": "attack",
+      "episode_return": 3.6164383561643834,
+      "steps": 21,
+      "segments": 1
+    },
+    {
+      "episode_id": 9,
+      "policy": "random",
+      "episode_return": 0.3287671232876712,
+      "steps": 24,
+      "segments": 1
+    },
+    {
+      "episode_id": 10,
+      "policy": "attack",
+      "episode_return": 3.287671232876712,
+      "steps": 25,
+      "segments": 1
+    },
+    {
+      "episode_id": 11,
+      "policy": "random",
+      "episode_return": 0.6575342465753424,
+      "steps": 60,
+      "segments": 3
+    },
+    {
+      "episode_id": 12,
+      "policy": "attack",
+      "episode_return": 3.9452054794520546,
+      "steps": 26,
+      "segments": 1
+    },
+    {
+      "episode_id": 13,
+      "policy": "random",
+      "episode_return": 1.3150684931506849,
+      "steps": 27,
+      "segments": 1
+    },
+    {
+      "episode_id": 14,
+      "policy": "attack",
+      "episode_return": 3.287671232876712,
+      "steps": 22,
+      "segments": 1
+    },
+    {
+      "episode_id": 15,
+      "policy": "random",
+      "episode_return": 1.3150684931506849,
+      "steps": 21,
+      "segments": 1
+    },
+    {
+      "episode_id": 16,
+      "policy": "attack",
+      "episode_return": 3.6164383561643834,
+      "steps": 25,
+      "segments": 1
+    },
+    {
+      "episode_id": 17,
+      "policy": "random",
+      "episode_return": 0.9863013698630136,
+      "steps": 27,
+      "segments": 1
+    },
+    {
+      "episode_id": 18,
+      "policy": "attack",
+      "episode_return": 2.958904109589041,
+      "steps": 26,
+      "segments": 1
+    },
+    {
+      "episode_id": 19,
+      "policy": "random",
+      "episode_return": 1.3150684931506849,
+      "steps": 27,
+      "segments": 1
+    }
+  ],
+  "pickle_file": "script_teacher_3m_seed1.pkl"
+}

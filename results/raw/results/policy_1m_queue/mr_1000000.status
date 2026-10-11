@@ -1,0 +1,5 @@
+model=mr
+budget_steps=1000000
+started_at=2026-10-11T12:26:31+08:00
+finished_at=2026-10-11T13:01:45+08:00
+exit_code=0

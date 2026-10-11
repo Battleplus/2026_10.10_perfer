@@ -1,0 +1,39 @@
+{
+  "runs": [
+    {
+      "id": "gt_3m_seed1_100k",
+      "method": "GT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": 100000,
+      "actual_env_steps": null,
+      "data_source": "请填写教师偏好数据文件和来源",
+      "policy_stdout": "../results/raw/gt_3m_seed1_100k.stdout.log",
+      "scalars": "../results/raw/gt_3m_seed1_100k_scalars.csv"
+    },
+    {
+      "id": "mapt_reward_seed1",
+      "method": "MAPT",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": null,
+      "actual_env_steps": null,
+      "data_source": "请填写教师偏好数据文件和来源",
+      "reward_model": "MAPT",
+      "reward_log": "../results/raw/mapt_reward_seed1.stdout.log",
+      "scalars": "../results/raw/mapt_reward_seed1_scalars.csv"
+    },
+    {
+      "id": "mr_reward_seed1",
+      "method": "MR",
+      "task": "3m",
+      "seed": 1,
+      "budget_steps": null,
+      "actual_env_steps": null,
+      "data_source": "请填写教师偏好数据文件和来源",
+      "reward_model": "MR",
+      "reward_log": "../results/raw/mr_reward_seed1.stdout.log",
+      "scalars": "../results/raw/mr_reward_seed1_scalars.csv"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+tag,step,value
+epoch,0,0.0
+epoch,1,1.0
+epoch,2,2.0
+reward/eval_rf_loss,0,0.6456963419914246
+reward/eval_rf_loss,1,0.609107494354248
+reward/eval_rf_loss,2,0.5746719241142273
+reward/rf_loss,0,0.7164480090141296
+reward/rf_loss,1,0.6241506338119507
+reward/rf_loss,2,0.5548787117004395

@@ -1,0 +1,1651 @@
+choose to use gpu...
+obs_space:  [[64, [2, 14], [3, 5], [1, 4], [1, 17]], [64, [2, 14], [3, 5], [1, 4], [1, 17]], [64, [2, 14], [3, 5], [1, 4], [1, 17]]]
+share_obs_space:  [[81, [2, 17], [3, 8], [1, 4], [1, 19]], [81, [2, 17], [3, 8], [1, 4], [1, 19]], [81, [2, 17], [3, 8], [1, 4], [1, 19]]]
+act_space:  [Discrete(9), Discrete(9), Discrete(9)]
+obs_dim:  64
+share_obs_dim:  81
+act_dim:  9
+gamma 0.99
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 41449 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-2gsf0on4/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 39081 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-fa086_av/'
+Version: B75689 (SC2.4.10)
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 40761 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-9wozesfw/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 35509 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-6q704gn_/'
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 38721 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-0grvmvps/'
+Version: B75689 (SC2.4.10)
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Build: Aug 12 2019 17:16:57
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 37817 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-x3ece4zy/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 43275 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-nvxyh2et/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 40003 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-z1vyq_zj/'
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:41449
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:35509
+Listening on: 127.0.0.1:40761
+Listening on: 127.0.0.1:39081
+Startup Phase 3 complete. Ready for commands.
+Startup Phase 3 complete. Ready for commands.
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:43275
+Listening on: 127.0.0.1:37817
+Startup Phase 3 complete. Ready for commands.
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:38721
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:40003
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:42860 accepted
+ReadyHandler: 127.0.0.1:42860 ready
+ConnectHandler: Request from 127.0.0.1:38462 accepted
+ConnectHandler: Request from 127.0.0.1:59166 accepted
+ReadyHandler: 127.0.0.1:38462 ready
+ReadyHandler: 127.0.0.1:59166 ready
+ConnectHandler: Request from 127.0.0.1:41814 accepted
+ReadyHandler: 127.0.0.1:41814 ready
+ConnectHandler: Request from 127.0.0.1:34732 accepted
+ReadyHandler: 127.0.0.1:34732 ready
+ConnectHandler: Request from 127.0.0.1:36508 accepted
+ReadyHandler: 127.0.0.1:36508 ready
+ConnectHandler: Request from 127.0.0.1:39980 accepted
+ReadyHandler: 127.0.0.1:39980 ready
+ConnectHandler: Request from 127.0.0.1:43978 accepted
+ReadyHandler: 127.0.0.1:43978 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Requesting to join a single player game
+Launching next game.
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 4
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 4
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Next launch phase started: 5
+Configure: render interface disabled
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 4
+Launching next game.
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Sending ResponseJoinGame
+Successfully loaded stable ids: GameData\stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Sending ResponseJoinGame
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 0/2083 episodes, total num timesteps 480/1000000, FPS 568.
+
+incre win rate is 0.0.
+some episodes done, average rewards:  1.517386722866175
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 44063 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-b8m6evgk/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:44063
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:52584 accepted
+ReadyHandler: 127.0.0.1:52584 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+eval win rate is 0.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 10/2083 episodes, total num timesteps 5280/1000000, FPS 327.
+
+incre win rate is 0.004629629629629629.
+some episodes done, average rewards:  5.617534246575341
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 20/2083 episodes, total num timesteps 10080/1000000, FPS 414.
+
+incre win rate is 0.13302752293577982.
+some episodes done, average rewards:  8.665362035225048
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 30/2083 episodes, total num timesteps 14880/1000000, FPS 458.
+
+incre win rate is 0.31100478468899523.
+some episodes done, average rewards:  16.47296322999279
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 40/2083 episodes, total num timesteps 19680/1000000, FPS 485.
+
+incre win rate is 0.495.
+some episodes done, average rewards:  12.383561643835614
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 50/2083 episodes, total num timesteps 24480/1000000, FPS 503.
+
+incre win rate is 0.5.
+some episodes done, average rewards:  14.05640612409347
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 60/2083 episodes, total num timesteps 29280/1000000, FPS 508.
+
+incre win rate is 0.5947368421052631.
+some episodes done, average rewards:  15.12937595129376
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 70/2083 episodes, total num timesteps 34080/1000000, FPS 517.
+
+incre win rate is 0.5742574257425742.
+some episodes done, average rewards:  13.70610211706102
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 80/2083 episodes, total num timesteps 38880/1000000, FPS 525.
+
+incre win rate is 0.6095238095238096.
+some episodes done, average rewards:  15.793868232224394
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 90/2083 episodes, total num timesteps 43680/1000000, FPS 532.
+
+incre win rate is 0.76.
+some episodes done, average rewards:  18.31631382316314
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 100/2083 episodes, total num timesteps 48480/1000000, FPS 536.
+
+incre win rate is 0.7945205479452054.
+some episodes done, average rewards:  18.87920298879203
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 110/2083 episodes, total num timesteps 53280/1000000, FPS 537.
+
+incre win rate is 0.812206572769953.
+some episodes done, average rewards:  17.698630136986303
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 120/2083 episodes, total num timesteps 58080/1000000, FPS 541.
+
+incre win rate is 0.7038834951456311.
+some episodes done, average rewards:  17.27695056581298
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 130/2083 episodes, total num timesteps 62880/1000000, FPS 545.
+
+incre win rate is 0.7085427135678392.
+some episodes done, average rewards:  16.383561643835613
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 140/2083 episodes, total num timesteps 67680/1000000, FPS 548.
+
+incre win rate is 0.7307692307692307.
+some episodes done, average rewards:  16.75558759913482
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 150/2083 episodes, total num timesteps 72480/1000000, FPS 551.
+
+incre win rate is 0.5990566037735849.
+some episodes done, average rewards:  13.98303979125897
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 160/2083 episodes, total num timesteps 77280/1000000, FPS 550.
+
+incre win rate is 0.6822429906542056.
+some episodes done, average rewards:  16.493150684931507
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 170/2083 episodes, total num timesteps 82080/1000000, FPS 552.
+
+incre win rate is 0.7242990654205608.
+some episodes done, average rewards:  13.680365296803652
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 180/2083 episodes, total num timesteps 86880/1000000, FPS 554.
+
+incre win rate is 0.7441860465116279.
+some episodes done, average rewards:  17.080234833659492
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 190/2083 episodes, total num timesteps 91680/1000000, FPS 555.
+
+incre win rate is 0.7177033492822966.
+some episodes done, average rewards:  16.967123287671235
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 200/2083 episodes, total num timesteps 96480/1000000, FPS 556.
+
+incre win rate is 0.6956521739130435.
+some episodes done, average rewards:  17.651663405088065
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 210/2083 episodes, total num timesteps 101280/1000000, FPS 556.
+
+incre win rate is 0.6865671641791045.
+some episodes done, average rewards:  14.819178082191778
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 220/2083 episodes, total num timesteps 106080/1000000, FPS 558.
+
+incre win rate is 0.5951219512195122.
+some episodes done, average rewards:  14.941469489414692
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 230/2083 episodes, total num timesteps 110880/1000000, FPS 559.
+
+incre win rate is 0.6728971962616822.
+some episodes done, average rewards:  16.767123287671232
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 240/2083 episodes, total num timesteps 115680/1000000, FPS 558.
+
+incre win rate is 0.6995515695067265.
+some episodes done, average rewards:  16.91780821917808
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 250/2083 episodes, total num timesteps 120480/1000000, FPS 556.
+
+incre win rate is 0.8148148148148148.
+some episodes done, average rewards:  17.061021170610214
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 260/2083 episodes, total num timesteps 125280/1000000, FPS 553.
+
+incre win rate is 0.8262910798122066.
+some episodes done, average rewards:  18.164383561643834
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 270/2083 episodes, total num timesteps 130080/1000000, FPS 553.
+
+incre win rate is 0.7107843137254902.
+some episodes done, average rewards:  14.278298485940878
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 280/2083 episodes, total num timesteps 134880/1000000, FPS 552.
+
+incre win rate is 0.6363636363636364.
+some episodes done, average rewards:  16.069214131218455
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 290/2083 episodes, total num timesteps 139680/1000000, FPS 551.
+
+incre win rate is 0.7135678391959799.
+some episodes done, average rewards:  13.75
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 300/2083 episodes, total num timesteps 144480/1000000, FPS 550.
+
+incre win rate is 0.5989847715736041.
+some episodes done, average rewards:  16.632627646326274
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 310/2083 episodes, total num timesteps 149280/1000000, FPS 548.
+
+incre win rate is 0.7368421052631579.
+some episodes done, average rewards:  17.758405977584058
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 320/2083 episodes, total num timesteps 154080/1000000, FPS 547.
+
+incre win rate is 0.845771144278607.
+some episodes done, average rewards:  19.027397260273972
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 330/2083 episodes, total num timesteps 158880/1000000, FPS 548.
+
+incre win rate is 0.87.
+some episodes done, average rewards:  18.89414694894147
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 340/2083 episodes, total num timesteps 163680/1000000, FPS 547.
+
+incre win rate is 0.8672985781990521.
+some episodes done, average rewards:  18.66575342465753
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 350/2083 episodes, total num timesteps 168480/1000000, FPS 547.
+
+incre win rate is 0.7761904761904762.
+some episodes done, average rewards:  16.314347512617157
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 360/2083 episodes, total num timesteps 173280/1000000, FPS 544.
+
+incre win rate is 0.7370892018779343.
+some episodes done, average rewards:  18.434782608695652
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 370/2083 episodes, total num timesteps 178080/1000000, FPS 544.
+
+incre win rate is 0.7751196172248804.
+some episodes done, average rewards:  18.084931506849312
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 380/2083 episodes, total num timesteps 182880/1000000, FPS 544.
+
+incre win rate is 0.8851674641148325.
+some episodes done, average rewards:  18.44907683144729
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 390/2083 episodes, total num timesteps 187680/1000000, FPS 544.
+
+incre win rate is 0.8755980861244019.
+some episodes done, average rewards:  18.87279843444227
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 400/2083 episodes, total num timesteps 192480/1000000, FPS 543.
+
+incre win rate is 0.7894736842105263.
+some episodes done, average rewards:  16.047322540473225
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 410/2083 episodes, total num timesteps 197280/1000000, FPS 542.
+
+incre win rate is 0.7810945273631841.
+some episodes done, average rewards:  17.4563806777217
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 420/2083 episodes, total num timesteps 202080/1000000, FPS 542.
+
+incre win rate is 0.8423645320197044.
+some episodes done, average rewards:  19.26171593366979
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 430/2083 episodes, total num timesteps 206880/1000000, FPS 542.
+
+incre win rate is 0.845771144278607.
+some episodes done, average rewards:  18.684931506849313
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 440/2083 episodes, total num timesteps 211680/1000000, FPS 542.
+
+incre win rate is 0.7980769230769231.
+some episodes done, average rewards:  18.251793868232227
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 450/2083 episodes, total num timesteps 216480/1000000, FPS 542.
+
+incre win rate is 0.8301886792452831.
+some episodes done, average rewards:  17.168119551681194
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 460/2083 episodes, total num timesteps 221280/1000000, FPS 540.
+
+incre win rate is 0.9095238095238095.
+some episodes done, average rewards:  19.44422700587084
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 470/2083 episodes, total num timesteps 226080/1000000, FPS 540.
+
+incre win rate is 0.9154929577464789.
+some episodes done, average rewards:  20.0
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 480/2083 episodes, total num timesteps 230880/1000000, FPS 540.
+
+incre win rate is 0.8341708542713567.
+some episodes done, average rewards:  16.853228962818005
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 490/2083 episodes, total num timesteps 235680/1000000, FPS 540.
+
+incre win rate is 0.6859903381642513.
+some episodes done, average rewards:  11.974044700793076
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 500/2083 episodes, total num timesteps 240480/1000000, FPS 539.
+
+incre win rate is 0.6354166666666666.
+some episodes done, average rewards:  14.476027397260273
+eval win rate is 0.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 510/2083 episodes, total num timesteps 245280/1000000, FPS 537.
+
+incre win rate is 0.7068062827225131.
+some episodes done, average rewards:  16.842105263157894
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 520/2083 episodes, total num timesteps 250080/1000000, FPS 537.
+
+incre win rate is 0.6836734693877551.
+some episodes done, average rewards:  15.095890410958905
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 530/2083 episodes, total num timesteps 254880/1000000, FPS 537.
+
+incre win rate is 0.7421052631578947.
+some episodes done, average rewards:  17.35159817351598
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 540/2083 episodes, total num timesteps 259680/1000000, FPS 536.
+
+incre win rate is 0.7777777777777778.
+some episodes done, average rewards:  17.41917808219178
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 550/2083 episodes, total num timesteps 264480/1000000, FPS 536.
+
+incre win rate is 0.8058252427184466.
+some episodes done, average rewards:  16.666666666666668
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 560/2083 episodes, total num timesteps 269280/1000000, FPS 536.
+
+incre win rate is 0.79.
+some episodes done, average rewards:  19.412915851272015
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 570/2083 episodes, total num timesteps 274080/1000000, FPS 536.
+
+incre win rate is 0.7421052631578947.
+some episodes done, average rewards:  13.650684931506849
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 580/2083 episodes, total num timesteps 278880/1000000, FPS 536.
+
+incre win rate is 0.7382198952879581.
+some episodes done, average rewards:  15.520547945205479
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 590/2083 episodes, total num timesteps 283680/1000000, FPS 536.
+
+incre win rate is 0.6263157894736842.
+some episodes done, average rewards:  16.106164383561644
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 600/2083 episodes, total num timesteps 288480/1000000, FPS 536.
+
+incre win rate is 0.5654450261780105.
+some episodes done, average rewards:  13.759512937595128
+eval win rate is 0.6.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 610/2083 episodes, total num timesteps 293280/1000000, FPS 535.
+
+incre win rate is 0.7305699481865285.
+some episodes done, average rewards:  13.404470079307858
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 620/2083 episodes, total num timesteps 298080/1000000, FPS 535.
+
+incre win rate is 0.8163265306122449.
+some episodes done, average rewards:  17.945205479452056
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 630/2083 episodes, total num timesteps 302880/1000000, FPS 536.
+
+incre win rate is 0.8241206030150754.
+some episodes done, average rewards:  17.570776255707763
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 640/2083 episodes, total num timesteps 307680/1000000, FPS 535.
+
+incre win rate is 0.7794871794871795.
+some episodes done, average rewards:  18.78356164383562
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 650/2083 episodes, total num timesteps 312480/1000000, FPS 536.
+
+incre win rate is 0.7382198952879581.
+some episodes done, average rewards:  18.18917155903457
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 660/2083 episodes, total num timesteps 317280/1000000, FPS 535.
+
+incre win rate is 0.8309178743961353.
+some episodes done, average rewards:  18.117808219178084
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 670/2083 episodes, total num timesteps 322080/1000000, FPS 535.
+
+incre win rate is 0.7647058823529411.
+some episodes done, average rewards:  17.42177361211247
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 680/2083 episodes, total num timesteps 326880/1000000, FPS 535.
+
+incre win rate is 0.8454106280193237.
+some episodes done, average rewards:  18.832876712328765
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 690/2083 episodes, total num timesteps 331680/1000000, FPS 535.
+
+incre win rate is 0.7788461538461539.
+some episodes done, average rewards:  17.508291276135544
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 700/2083 episodes, total num timesteps 336480/1000000, FPS 535.
+
+incre win rate is 0.775609756097561.
+some episodes done, average rewards:  18.150684931506852
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 710/2083 episodes, total num timesteps 341280/1000000, FPS 534.
+
+incre win rate is 0.8894230769230769.
+some episodes done, average rewards:  18.273972602739722
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 720/2083 episodes, total num timesteps 346080/1000000, FPS 534.
+
+incre win rate is 0.8691588785046729.
+some episodes done, average rewards:  18.801992528019927
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 730/2083 episodes, total num timesteps 350880/1000000, FPS 534.
+
+incre win rate is 0.780373831775701.
+some episodes done, average rewards:  16.107098381070983
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 740/2083 episodes, total num timesteps 355680/1000000, FPS 534.
+
+incre win rate is 0.8720379146919431.
+some episodes done, average rewards:  16.983692106979777
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 750/2083 episodes, total num timesteps 360480/1000000, FPS 534.
+
+incre win rate is 0.8285714285714286.
+some episodes done, average rewards:  17.245979749851102
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 760/2083 episodes, total num timesteps 365280/1000000, FPS 533.
+
+incre win rate is 0.8571428571428571.
+some episodes done, average rewards:  17.667318982387478
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 770/2083 episodes, total num timesteps 370080/1000000, FPS 533.
+
+incre win rate is 0.8899082568807339.
+some episodes done, average rewards:  18.92793329362716
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 780/2083 episodes, total num timesteps 374880/1000000, FPS 533.
+
+incre win rate is 0.7294685990338164.
+some episodes done, average rewards:  15.818181818181815
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 790/2083 episodes, total num timesteps 379680/1000000, FPS 534.
+
+incre win rate is 0.6600985221674877.
+some episodes done, average rewards:  16.554033485540334
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 800/2083 episodes, total num timesteps 384480/1000000, FPS 535.
+
+incre win rate is 0.59.
+some episodes done, average rewards:  13.832572298325722
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 810/2083 episodes, total num timesteps 389280/1000000, FPS 535.
+
+incre win rate is 0.6030150753768844.
+some episodes done, average rewards:  15.412915851272016
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 820/2083 episodes, total num timesteps 394080/1000000, FPS 535.
+
+incre win rate is 0.76.
+some episodes done, average rewards:  16.738284066330205
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 830/2083 episodes, total num timesteps 398880/1000000, FPS 536.
+
+incre win rate is 0.7548076923076923.
+some episodes done, average rewards:  17.80323785803238
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 840/2083 episodes, total num timesteps 403680/1000000, FPS 536.
+
+incre win rate is 0.6748768472906403.
+some episodes done, average rewards:  17.667318982387474
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 850/2083 episodes, total num timesteps 408480/1000000, FPS 537.
+
+incre win rate is 0.7192118226600985.
+some episodes done, average rewards:  16.54794520547945
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 860/2083 episodes, total num timesteps 413280/1000000, FPS 537.
+
+incre win rate is 0.7703349282296651.
+some episodes done, average rewards:  18.363636363636363
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 870/2083 episodes, total num timesteps 418080/1000000, FPS 538.
+
+incre win rate is 0.7487437185929648.
+some episodes done, average rewards:  13.96683489545782
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 880/2083 episodes, total num timesteps 422880/1000000, FPS 538.
+
+incre win rate is 0.676923076923077.
+some episodes done, average rewards:  17.508291276135544
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 890/2083 episodes, total num timesteps 427680/1000000, FPS 539.
+
+incre win rate is 0.7352941176470589.
+some episodes done, average rewards:  14.113502935420744
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 900/2083 episodes, total num timesteps 432480/1000000, FPS 539.
+
+incre win rate is 0.6782178217821783.
+some episodes done, average rewards:  14.9127613554434
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 910/2083 episodes, total num timesteps 437280/1000000, FPS 539.
+
+incre win rate is 0.8461538461538461.
+some episodes done, average rewards:  19.428571428571427
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 920/2083 episodes, total num timesteps 442080/1000000, FPS 540.
+
+incre win rate is 0.8930232558139535.
+some episodes done, average rewards:  18.89414694894147
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 930/2083 episodes, total num timesteps 446880/1000000, FPS 540.
+
+incre win rate is 0.8738317757009346.
+some episodes done, average rewards:  18.25440313111546
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 940/2083 episodes, total num timesteps 451680/1000000, FPS 540.
+
+incre win rate is 0.8095238095238095.
+some episodes done, average rewards:  17.833125778331258
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 950/2083 episodes, total num timesteps 456480/1000000, FPS 541.
+
+incre win rate is 0.8203883495145631.
+some episodes done, average rewards:  18.63013698630137
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 960/2083 episodes, total num timesteps 461280/1000000, FPS 541.
+
+incre win rate is 0.8038277511961722.
+some episodes done, average rewards:  18.238747553816047
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 970/2083 episodes, total num timesteps 466080/1000000, FPS 541.
+
+incre win rate is 0.7263681592039801.
+some episodes done, average rewards:  16.158615717375632
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 980/2083 episodes, total num timesteps 470880/1000000, FPS 542.
+
+incre win rate is 0.7295918367346939.
+some episodes done, average rewards:  18.754145638067772
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 990/2083 episodes, total num timesteps 475680/1000000, FPS 542.
+
+incre win rate is 0.7305699481865285.
+some episodes done, average rewards:  17.442922374429223
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1000/2083 episodes, total num timesteps 480480/1000000, FPS 542.
+
+incre win rate is 0.7525252525252525.
+some episodes done, average rewards:  17.037872683319904
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1010/2083 episodes, total num timesteps 485280/1000000, FPS 542.
+
+incre win rate is 0.7537688442211056.
+some episodes done, average rewards:  17.123287671232877
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1020/2083 episodes, total num timesteps 490080/1000000, FPS 543.
+
+incre win rate is 0.664804469273743.
+some episodes done, average rewards:  16.66849315068493
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1030/2083 episodes, total num timesteps 494880/1000000, FPS 543.
+
+incre win rate is 0.7566137566137566.
+some episodes done, average rewards:  18.183561643835617
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1040/2083 episodes, total num timesteps 499680/1000000, FPS 543.
+
+incre win rate is 0.8300970873786407.
+some episodes done, average rewards:  17.696139476961392
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1050/2083 episodes, total num timesteps 504480/1000000, FPS 543.
+
+incre win rate is 0.8115942028985508.
+some episodes done, average rewards:  15.074581430745816
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1060/2083 episodes, total num timesteps 509280/1000000, FPS 542.
+
+incre win rate is 0.7114427860696517.
+some episodes done, average rewards:  17.064579256360076
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1070/2083 episodes, total num timesteps 514080/1000000, FPS 542.
+
+incre win rate is 0.7638190954773869.
+some episodes done, average rewards:  16.26027397260274
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:39980 disconnected
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 36121 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-qaxulx4u/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:36121
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:55166 accepted
+ReadyHandler: 127.0.0.1:55166 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:38462 disconnected
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 36303 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-k3r4ml6x/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:36303
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:47958 accepted
+ReadyHandler: 127.0.0.1:47958 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:42860 disconnected
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:34732 disconnected
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:36508 disconnected
+Version: B75689 (SC2.4.10)
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 38055 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-teockopp/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 46013 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-7bi_r49k/'
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 36959 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-uwkms8zz/'
+Starting up...
+Starting up...
+Starting up...
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Creating stub renderer...
+Listening on: 127.0.0.1:46013
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:38055
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:36959
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:46796 accepted
+ReadyHandler: 127.0.0.1:46796 ready
+ConnectHandler: Request from 127.0.0.1:48774 accepted
+ReadyHandler: 127.0.0.1:48774 ready
+ConnectHandler: Request from 127.0.0.1:60296 accepted
+ReadyHandler: 127.0.0.1:60296 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+RequestQuit command received.
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:41814 disconnected
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:43978 disconnected
+CloseHandler: 127.0.0.1:59166 disconnected
+RequestQuit command received.
+QueueResponse: No outstanding requests to this connection, dropping response: quit, id: 999999999
+Closing Application...
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 43377 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-0vv0v1c4/'
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 40427 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-347toh_8/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 39641 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-46qif6q3/'
+Starting up...
+Starting up...
+Starting up...
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Creating stub renderer...
+Listening on: 127.0.0.1:39641
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:43377
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:40427
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:50530 accepted
+ConnectHandler: Request from 127.0.0.1:57420 accepted
+ReadyHandler: 127.0.0.1:57420 ready
+ReadyHandler: 127.0.0.1:50530 ready
+ConnectHandler: Request from 127.0.0.1:41966 accepted
+ReadyHandler: 127.0.0.1:41966 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Next launch phase started: 2
+Next launch phase started: 3
+Launching next game.
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1080/2083 episodes, total num timesteps 518880/1000000, FPS 530.
+
+incre win rate is 0.7718446601941747.
+some episodes done, average rewards:  12.431506849315069
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1090/2083 episodes, total num timesteps 523680/1000000, FPS 530.
+
+incre win rate is 0.7757009345794392.
+some episodes done, average rewards:  18.393524283935243
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1100/2083 episodes, total num timesteps 528480/1000000, FPS 530.
+
+incre win rate is 0.6698564593301436.
+some episodes done, average rewards:  16.317808219178083
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1110/2083 episodes, total num timesteps 533280/1000000, FPS 529.
+
+incre win rate is 0.7073170731707317.
+some episodes done, average rewards:  14.438356164383562
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1120/2083 episodes, total num timesteps 538080/1000000, FPS 529.
+
+incre win rate is 0.7355769230769231.
+some episodes done, average rewards:  14.844333748443336
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1130/2083 episodes, total num timesteps 542880/1000000, FPS 529.
+
+incre win rate is 0.7804878048780488.
+some episodes done, average rewards:  17.10893672537508
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1140/2083 episodes, total num timesteps 547680/1000000, FPS 530.
+
+incre win rate is 0.7970297029702971.
+some episodes done, average rewards:  18.719538572458543
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1150/2083 episodes, total num timesteps 552480/1000000, FPS 529.
+
+incre win rate is 0.7439613526570048.
+some episodes done, average rewards:  14.87279843444227
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1160/2083 episodes, total num timesteps 557280/1000000, FPS 529.
+
+incre win rate is 0.7427184466019418.
+some episodes done, average rewards:  16.63013698630137
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1170/2083 episodes, total num timesteps 562080/1000000, FPS 529.
+
+incre win rate is 0.7692307692307693.
+some episodes done, average rewards:  17.153175591531756
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1180/2083 episodes, total num timesteps 566880/1000000, FPS 529.
+
+incre win rate is 0.7810945273631841.
+some episodes done, average rewards:  16.032876712328765
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1190/2083 episodes, total num timesteps 571680/1000000, FPS 529.
+
+incre win rate is 0.7676767676767676.
+some episodes done, average rewards:  16.865753424657534
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1200/2083 episodes, total num timesteps 576480/1000000, FPS 529.
+
+incre win rate is 0.7738693467336684.
+some episodes done, average rewards:  18.285714285714285
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1210/2083 episodes, total num timesteps 581280/1000000, FPS 529.
+
+incre win rate is 0.7586206896551724.
+some episodes done, average rewards:  18.348692403486925
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1220/2083 episodes, total num timesteps 586080/1000000, FPS 529.
+
+incre win rate is 0.75.
+some episodes done, average rewards:  16.497915425848717
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1230/2083 episodes, total num timesteps 590880/1000000, FPS 529.
+
+incre win rate is 0.6745283018867925.
+some episodes done, average rewards:  16.126265634306133
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1240/2083 episodes, total num timesteps 595680/1000000, FPS 529.
+
+incre win rate is 0.6666666666666666.
+some episodes done, average rewards:  15.149380300065229
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1250/2083 episodes, total num timesteps 600480/1000000, FPS 529.
+
+incre win rate is 0.8238095238095238.
+some episodes done, average rewards:  18.8
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1260/2083 episodes, total num timesteps 605280/1000000, FPS 528.
+
+incre win rate is 0.8627450980392157.
+some episodes done, average rewards:  17.923896499238964
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1270/2083 episodes, total num timesteps 610080/1000000, FPS 528.
+
+incre win rate is 0.9033816425120773.
+some episodes done, average rewards:  19.383561643835616
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1280/2083 episodes, total num timesteps 614880/1000000, FPS 528.
+
+incre win rate is 0.8443396226415094.
+some episodes done, average rewards:  15.080405002977962
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1290/2083 episodes, total num timesteps 619680/1000000, FPS 528.
+
+incre win rate is 0.8333333333333334.
+some episodes done, average rewards:  17.64881693648817
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1300/2083 episodes, total num timesteps 624480/1000000, FPS 528.
+
+incre win rate is 0.8627450980392157.
+some episodes done, average rewards:  17.583561643835615
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1310/2083 episodes, total num timesteps 629280/1000000, FPS 528.
+
+incre win rate is 0.8815165876777251.
+some episodes done, average rewards:  18.115068493150684
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1320/2083 episodes, total num timesteps 634080/1000000, FPS 528.
+
+incre win rate is 0.8812785388127854.
+some episodes done, average rewards:  18.92793329362716
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1330/2083 episodes, total num timesteps 638880/1000000, FPS 528.
+
+incre win rate is 0.8617511520737328.
+some episodes done, average rewards:  17.714285714285715
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1340/2083 episodes, total num timesteps 643680/1000000, FPS 528.
+
+incre win rate is 0.7465437788018433.
+some episodes done, average rewards:  17.34390771449171
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1350/2083 episodes, total num timesteps 648480/1000000, FPS 528.
+
+incre win rate is 0.7567567567567568.
+some episodes done, average rewards:  19.461584276354973
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1360/2083 episodes, total num timesteps 653280/1000000, FPS 528.
+
+incre win rate is 0.7927927927927928.
+some episodes done, average rewards:  19.5
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1370/2083 episodes, total num timesteps 658080/1000000, FPS 528.
+
+incre win rate is 0.8644859813084113.
+some episodes done, average rewards:  15.692106979778213
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1380/2083 episodes, total num timesteps 662880/1000000, FPS 528.
+
+incre win rate is 0.8761467889908257.
+some episodes done, average rewards:  18.389517569982132
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1390/2083 episodes, total num timesteps 667680/1000000, FPS 528.
+
+incre win rate is 0.8584474885844748.
+some episodes done, average rewards:  18.346634901727217
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1400/2083 episodes, total num timesteps 672480/1000000, FPS 528.
+
+incre win rate is 0.7990867579908676.
+some episodes done, average rewards:  16.23483365949119
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1410/2083 episodes, total num timesteps 677280/1000000, FPS 527.
+
+incre win rate is 0.9136363636363637.
+some episodes done, average rewards:  19.492555092316856
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1420/2083 episodes, total num timesteps 682080/1000000, FPS 527.
+
+incre win rate is 0.8411214953271028.
+some episodes done, average rewards:  15.838500360490265
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1430/2083 episodes, total num timesteps 686880/1000000, FPS 528.
+
+incre win rate is 0.7912621359223301.
+some episodes done, average rewards:  17.174168297455967
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1440/2083 episodes, total num timesteps 691680/1000000, FPS 528.
+
+incre win rate is 0.821256038647343.
+some episodes done, average rewards:  15.464231354642314
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1450/2083 episodes, total num timesteps 696480/1000000, FPS 528.
+
+incre win rate is 0.8391959798994975.
+some episodes done, average rewards:  18.89414694894147
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1460/2083 episodes, total num timesteps 701280/1000000, FPS 527.
+
+incre win rate is 0.8142857142857143.
+some episodes done, average rewards:  15.583561643835617
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1470/2083 episodes, total num timesteps 706080/1000000, FPS 527.
+
+incre win rate is 0.7761194029850746.
+some episodes done, average rewards:  16.427919112850617
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1480/2083 episodes, total num timesteps 710880/1000000, FPS 527.
+
+incre win rate is 0.7881773399014779.
+some episodes done, average rewards:  18.12256669069935
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1490/2083 episodes, total num timesteps 715680/1000000, FPS 527.
+
+incre win rate is 0.8990384615384616.
+some episodes done, average rewards:  18.420488385944015
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1500/2083 episodes, total num timesteps 720480/1000000, FPS 527.
+
+incre win rate is 0.8118811881188119.
+some episodes done, average rewards:  17.798689696247767
+eval win rate is 0.6.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1510/2083 episodes, total num timesteps 725280/1000000, FPS 527.
+
+incre win rate is 0.7602040816326531.
+some episodes done, average rewards:  19.351117519826964
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1520/2083 episodes, total num timesteps 730080/1000000, FPS 527.
+
+incre win rate is 0.9234449760765551.
+some episodes done, average rewards:  19.435378201310304
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1530/2083 episodes, total num timesteps 734880/1000000, FPS 527.
+
+incre win rate is 0.8904761904761904.
+some episodes done, average rewards:  18.816936488169365
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1540/2083 episodes, total num timesteps 739680/1000000, FPS 527.
+
+incre win rate is 0.8932038834951457.
+some episodes done, average rewards:  20.0
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1550/2083 episodes, total num timesteps 744480/1000000, FPS 527.
+
+incre win rate is 0.9014778325123153.
+some episodes done, average rewards:  18.75068493150685
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1560/2083 episodes, total num timesteps 749280/1000000, FPS 527.
+
+incre win rate is 0.8909952606635071.
+some episodes done, average rewards:  18.348692403486925
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1570/2083 episodes, total num timesteps 754080/1000000, FPS 527.
+
+incre win rate is 0.8837209302325582.
+some episodes done, average rewards:  18.985110184633708
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1580/2083 episodes, total num timesteps 758880/1000000, FPS 527.
+
+incre win rate is 0.8703703703703703.
+some episodes done, average rewards:  17.753424657534246
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1590/2083 episodes, total num timesteps 763680/1000000, FPS 527.
+
+incre win rate is 0.8980582524271845.
+some episodes done, average rewards:  18.754145638067772
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1600/2083 episodes, total num timesteps 768480/1000000, FPS 528.
+
+incre win rate is 0.8689320388349514.
+some episodes done, average rewards:  18.750684931506846
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1610/2083 episodes, total num timesteps 773280/1000000, FPS 528.
+
+incre win rate is 0.8009950248756219.
+some episodes done, average rewards:  17.46575342465753
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1620/2083 episodes, total num timesteps 778080/1000000, FPS 528.
+
+incre win rate is 0.848780487804878.
+some episodes done, average rewards:  18.70223503965393
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1630/2083 episodes, total num timesteps 782880/1000000, FPS 528.
+
+incre win rate is 0.9141414141414141.
+some episodes done, average rewards:  18.06849315068493
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1640/2083 episodes, total num timesteps 787680/1000000, FPS 529.
+
+incre win rate is 0.9368932038834952.
+some episodes done, average rewards:  18.754145638067772
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1650/2083 episodes, total num timesteps 792480/1000000, FPS 529.
+
+incre win rate is 0.7609756097560976.
+some episodes done, average rewards:  16.983692106979777
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1660/2083 episodes, total num timesteps 797280/1000000, FPS 529.
+
+incre win rate is 0.7894736842105263.
+some episodes done, average rewards:  18.54955680902498
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1670/2083 episodes, total num timesteps 802080/1000000, FPS 529.
+
+incre win rate is 0.8415841584158416.
+some episodes done, average rewards:  19.278538812785385
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1680/2083 episodes, total num timesteps 806880/1000000, FPS 530.
+
+incre win rate is 0.6446700507614214.
+some episodes done, average rewards:  13.06705118961788
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1690/2083 episodes, total num timesteps 811680/1000000, FPS 530.
+
+incre win rate is 0.7587939698492462.
+some episodes done, average rewards:  18.767123287671232
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1700/2083 episodes, total num timesteps 816480/1000000, FPS 530.
+
+incre win rate is 0.7738693467336684.
+some episodes done, average rewards:  17.570776255707763
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1710/2083 episodes, total num timesteps 821280/1000000, FPS 530.
+
+incre win rate is 0.8693467336683417.
+some episodes done, average rewards:  19.416438356164385
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1720/2083 episodes, total num timesteps 826080/1000000, FPS 531.
+
+incre win rate is 0.8647342995169082.
+some episodes done, average rewards:  20.0
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1730/2083 episodes, total num timesteps 830880/1000000, FPS 531.
+
+incre win rate is 0.9082125603864735.
+some episodes done, average rewards:  20.0
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1740/2083 episodes, total num timesteps 835680/1000000, FPS 531.
+
+incre win rate is 0.9383886255924171.
+some episodes done, average rewards:  20.0
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1750/2083 episodes, total num timesteps 840480/1000000, FPS 531.
+
+incre win rate is 0.883177570093458.
+some episodes done, average rewards:  19.0
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1760/2083 episodes, total num timesteps 845280/1000000, FPS 531.
+
+incre win rate is 0.9027777777777778.
+some episodes done, average rewards:  16.652769505658128
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1770/2083 episodes, total num timesteps 850080/1000000, FPS 531.
+
+incre win rate is 0.8967136150234741.
+some episodes done, average rewards:  19.33150684931507
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1780/2083 episodes, total num timesteps 854880/1000000, FPS 532.
+
+incre win rate is 0.8086124401913876.
+some episodes done, average rewards:  16.498132004981322
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1790/2083 episodes, total num timesteps 859680/1000000, FPS 532.
+
+incre win rate is 0.784688995215311.
+some episodes done, average rewards:  16.99934768427919
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1800/2083 episodes, total num timesteps 864480/1000000, FPS 532.
+
+incre win rate is 0.7643979057591623.
+some episodes done, average rewards:  16.71780821917808
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1810/2083 episodes, total num timesteps 869280/1000000, FPS 532.
+
+incre win rate is 0.8010204081632653.
+some episodes done, average rewards:  20.0
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1820/2083 episodes, total num timesteps 874080/1000000, FPS 532.
+
+incre win rate is 0.7846153846153846.
+some episodes done, average rewards:  17.484931506849314
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1830/2083 episodes, total num timesteps 878880/1000000, FPS 532.
+
+incre win rate is 0.6756756756756757.
+some episodes done, average rewards:  18.001441961067048
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1840/2083 episodes, total num timesteps 883680/1000000, FPS 532.
+
+incre win rate is 0.8341463414634146.
+some episodes done, average rewards:  18.11780821917808
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1850/2083 episodes, total num timesteps 888480/1000000, FPS 532.
+
+incre win rate is 0.8256410256410256.
+some episodes done, average rewards:  18.78356164383562
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1860/2083 episodes, total num timesteps 893280/1000000, FPS 532.
+
+incre win rate is 0.7357512953367875.
+some episodes done, average rewards:  16.19322278298486
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1870/2083 episodes, total num timesteps 898080/1000000, FPS 532.
+
+incre win rate is 0.8669950738916257.
+some episodes done, average rewards:  16.983692106979777
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1880/2083 episodes, total num timesteps 902880/1000000, FPS 532.
+
+incre win rate is 0.8591549295774648.
+some episodes done, average rewards:  18.363636363636363
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1890/2083 episodes, total num timesteps 907680/1000000, FPS 532.
+
+incre win rate is 0.8028169014084507.
+some episodes done, average rewards:  17.095890410958905
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1900/2083 episodes, total num timesteps 912480/1000000, FPS 532.
+
+incre win rate is 0.7783251231527094.
+some episodes done, average rewards:  16.41095890410959
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1910/2083 episodes, total num timesteps 917280/1000000, FPS 531.
+
+incre win rate is 0.7536231884057971.
+some episodes done, average rewards:  17.653798256537982
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1920/2083 episodes, total num timesteps 922080/1000000, FPS 531.
+
+incre win rate is 0.7860696517412935.
+some episodes done, average rewards:  16.054794520547944
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1930/2083 episodes, total num timesteps 926880/1000000, FPS 531.
+
+incre win rate is 0.7178217821782178.
+some episodes done, average rewards:  16.807498197548668
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1940/2083 episodes, total num timesteps 931680/1000000, FPS 531.
+
+incre win rate is 0.765.
+some episodes done, average rewards:  19.316510454217738
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1950/2083 episodes, total num timesteps 936480/1000000, FPS 531.
+
+incre win rate is 0.8029556650246306.
+some episodes done, average rewards:  17.632876712328766
+eval win rate is 0.6.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1960/2083 episodes, total num timesteps 941280/1000000, FPS 531.
+
+incre win rate is 0.689119170984456.
+some episodes done, average rewards:  16.470588235294116
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1970/2083 episodes, total num timesteps 946080/1000000, FPS 531.
+
+incre win rate is 0.6581632653061225.
+some episodes done, average rewards:  16.84018264840183
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1980/2083 episodes, total num timesteps 950880/1000000, FPS 531.
+
+incre win rate is 0.7222222222222222.
+some episodes done, average rewards:  17.168119551681198
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 1990/2083 episodes, total num timesteps 955680/1000000, FPS 531.
+
+incre win rate is 0.8164251207729468.
+some episodes done, average rewards:  17.75104228707564
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2000/2083 episodes, total num timesteps 960480/1000000, FPS 531.
+
+incre win rate is 0.8018867924528302.
+some episodes done, average rewards:  15.999999999999996
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2010/2083 episodes, total num timesteps 965280/1000000, FPS 530.
+
+incre win rate is 0.8229665071770335.
+some episodes done, average rewards:  17.103362391033624
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2020/2083 episodes, total num timesteps 970080/1000000, FPS 530.
+
+incre win rate is 0.8325123152709359.
+some episodes done, average rewards:  17.482191780821918
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2030/2083 episodes, total num timesteps 974880/1000000, FPS 530.
+
+incre win rate is 0.8861386138613861.
+some episodes done, average rewards:  18.052054794520547
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2040/2083 episodes, total num timesteps 979680/1000000, FPS 530.
+
+incre win rate is 0.7990430622009569.
+some episodes done, average rewards:  17.183063511830635
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2050/2083 episodes, total num timesteps 984480/1000000, FPS 530.
+
+incre win rate is 0.8778280542986425.
+some episodes done, average rewards:  17.941631923764145
+eval win rate is 0.8.
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2060/2083 episodes, total num timesteps 989280/1000000, FPS 530.
+
+incre win rate is 0.8256880733944955.
+some episodes done, average rewards:  19.439601494396015
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2070/2083 episodes, total num timesteps 994080/1000000, FPS 530.
+
+incre win rate is 0.8316831683168316.
+some episodes done, average rewards:  18.78356164383562
+
+ Map 3m Algo mat Exp gt_seed1_1m updates 2080/2083 episodes, total num timesteps 998880/1000000, FPS 530.
+
+incre win rate is 0.8238095238095238.
+some episodes done, average rewards:  17.76295413936867
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:46796 disconnected
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:55166 disconnected
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:60296 disconnected
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:48774 disconnected
+DataHandler: unable to parse websocket frame.
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:57420 disconnected
+RequestQuit command received.
+Closing Application...
+CloseHandler: 127.0.0.1:47958 disconnected
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:50530 disconnected
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:41966 disconnected
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:52584 disconnected
+real 1895.44
+user 4769.13
+sys 279.65

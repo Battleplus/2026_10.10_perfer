@@ -1,0 +1,119 @@
+{
+  "source": "project script teacher; labels compare cumulative SMAC episode reward",
+  "map": "3s5z",
+  "seed": 1,
+  "episodes": 12,
+  "window_length": 16,
+  "pair_limit": 60,
+  "trajectory_segments": 33,
+  "preference_pairs": 60,
+  "training_pairs": 48,
+  "validation_pairs": 12,
+  "training_episode_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "validation_episode_ids": [
+    9,
+    10,
+    11
+  ],
+  "label_counts": {
+    "traj0_preferred": 30,
+    "traj1_preferred": 30,
+    "tie": 0
+  },
+  "episode_summaries": [
+    {
+      "episode_id": 0,
+      "policy": "attack",
+      "episode_return": 6.344370860927151,
+      "steps": 46,
+      "segments": 2
+    },
+    {
+      "episode_id": 1,
+      "policy": "random",
+      "episode_return": 3.965231788079471,
+      "steps": 47,
+      "segments": 2
+    },
+    {
+      "episode_id": 2,
+      "policy": "attack",
+      "episode_return": 6.109271523178806,
+      "steps": 46,
+      "segments": 2
+    },
+    {
+      "episode_id": 3,
+      "policy": "random",
+      "episode_return": 4.387417218543044,
+      "steps": 52,
+      "segments": 3
+    },
+    {
+      "episode_id": 4,
+      "policy": "attack",
+      "episode_return": 7.483443708609271,
+      "steps": 48,
+      "segments": 3
+    },
+    {
+      "episode_id": 5,
+      "policy": "random",
+      "episode_return": 4.2152317880794685,
+      "steps": 50,
+      "segments": 3
+    },
+    {
+      "episode_id": 6,
+      "policy": "attack",
+      "episode_return": 5.521523178807948,
+      "steps": 47,
+      "segments": 2
+    },
+    {
+      "episode_id": 7,
+      "policy": "random",
+      "episode_return": 3.350993377483444,
+      "steps": 57,
+      "segments": 3
+    },
+    {
+      "episode_id": 8,
+      "policy": "attack",
+      "episode_return": 6.543046357615894,
+      "steps": 48,
+      "segments": 3
+    },
+    {
+      "episode_id": 9,
+      "policy": "random",
+      "episode_return": 4.99503311258278,
+      "steps": 54,
+      "segments": 3
+    },
+    {
+      "episode_id": 10,
+      "policy": "attack",
+      "episode_return": 5.289735099337747,
+      "steps": 48,
+      "segments": 3
+    },
+    {
+      "episode_id": 11,
+      "policy": "random",
+      "episode_return": 4.321192052980134,
+      "steps": 77,
+      "segments": 4
+    }
+  ]
+}

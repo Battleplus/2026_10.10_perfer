@@ -1,0 +1,183 @@
+{
+  "map": "3s5z",
+  "seed": 1,
+  "device": "cpu",
+  "cuda_visible_devices": "",
+  "torch_threads": 1,
+  "model_checkpoint": "/home/user1/projects/amb-mapt-study/results/diagnostics/3s5z_attention/models/reward_model_1.pt",
+  "preference_dataset": "/home/user1/projects/amb-mapt-study/results/diagnostics/3s5z_attention/script_teacher_3s5z_seed1.pkl",
+  "model_input": {
+    "observation_dim": 252,
+    "action_dim": 14,
+    "max_len": 16,
+    "n_agent": 8
+  },
+  "sample_shape": {
+    "observations": [
+      1,
+      16,
+      8,
+      252
+    ],
+    "actions": [
+      1,
+      16,
+      8,
+      1
+    ],
+    "timesteps": [
+      1,
+      16
+    ]
+  },
+  "predicted_segment_return": {
+    "baseline": -2.7621946334838867,
+    "cooperation_uniform": -1.6646047830581665,
+    "time_uniform": 8.634249687194824
+  },
+  "delta_from_baseline": {
+    "cooperation_uniform": 1.0975898504257202,
+    "time_uniform": 11.396444320678711
+  },
+  "training": {
+    "epochs": 3,
+    "batch_size": 8,
+    "history": [
+      {
+        "epoch": 0,
+        "train_loss": 6.984107096880218,
+        "eval_loss": 5.8773894951848
+      },
+      {
+        "epoch": 1,
+        "train_loss": 1.376509424034661,
+        "eval_loss": 1.4124080756285462
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.47104896234888355,
+        "eval_loss": 3.5153535591165763
+      }
+    ]
+  },
+  "data": {
+    "source": "project script teacher; labels compare cumulative SMAC episode reward",
+    "map": "3s5z",
+    "seed": 1,
+    "episodes": 12,
+    "window_length": 16,
+    "pair_limit": 60,
+    "trajectory_segments": 33,
+    "preference_pairs": 60,
+    "training_pairs": 48,
+    "validation_pairs": 12,
+    "training_episode_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "validation_episode_ids": [
+      9,
+      10,
+      11
+    ],
+    "label_counts": {
+      "traj0_preferred": 30,
+      "traj1_preferred": 30,
+      "tie": 0
+    },
+    "episode_summaries": [
+      {
+        "episode_id": 0,
+        "policy": "attack",
+        "episode_return": 6.344370860927151,
+        "steps": 46,
+        "segments": 2
+      },
+      {
+        "episode_id": 1,
+        "policy": "random",
+        "episode_return": 3.965231788079471,
+        "steps": 47,
+        "segments": 2
+      },
+      {
+        "episode_id": 2,
+        "policy": "attack",
+        "episode_return": 6.109271523178806,
+        "steps": 46,
+        "segments": 2
+      },
+      {
+        "episode_id": 3,
+        "policy": "random",
+        "episode_return": 4.387417218543044,
+        "steps": 52,
+        "segments": 3
+      },
+      {
+        "episode_id": 4,
+        "policy": "attack",
+        "episode_return": 7.483443708609271,
+        "steps": 48,
+        "segments": 3
+      },
+      {
+        "episode_id": 5,
+        "policy": "random",
+        "episode_return": 4.2152317880794685,
+        "steps": 50,
+        "segments": 3
+      },
+      {
+        "episode_id": 6,
+        "policy": "attack",
+        "episode_return": 5.521523178807948,
+        "steps": 47,
+        "segments": 2
+      },
+      {
+        "episode_id": 7,
+        "policy": "random",
+        "episode_return": 3.350993377483444,
+        "steps": 57,
+        "segments": 3
+      },
+      {
+        "episode_id": 8,
+        "policy": "attack",
+        "episode_return": 6.543046357615894,
+        "steps": 48,
+        "segments": 3
+      },
+      {
+        "episode_id": 9,
+        "policy": "random",
+        "episode_return": 4.99503311258278,
+        "steps": 54,
+        "segments": 3
+      },
+      {
+        "episode_id": 10,
+        "policy": "attack",
+        "episode_return": 5.289735099337747,
+        "steps": 48,
+        "segments": 3
+      },
+      {
+        "episode_id": 11,
+        "policy": "random",
+        "episode_return": 4.321192052980134,
+        "steps": 77,
+        "segments": 4
+      }
+    ]
+  },
+  "interpretation": "Exploratory sensitivity check on one scripted-teacher trajectory and a small map-specific model; uniform weights are substituted one component at a time. This is not a retrained ablation or a paper result."
+}

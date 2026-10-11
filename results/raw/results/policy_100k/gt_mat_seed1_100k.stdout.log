@@ -1,0 +1,418 @@
+choose to use gpu...
+obs_space:  [[64, [2, 14], [3, 5], [1, 4], [1, 17]], [64, [2, 14], [3, 5], [1, 4], [1, 17]], [64, [2, 14], [3, 5], [1, 4], [1, 17]]]
+share_obs_space:  [[81, [2, 17], [3, 8], [1, 4], [1, 19]], [81, [2, 17], [3, 8], [1, 4], [1, 19]], [81, [2, 17], [3, 8], [1, 4], [1, 19]]]
+act_space:  [Discrete(9), Discrete(9), Discrete(9)]
+obs_dim:  64
+share_obs_dim:  81
+act_dim:  9
+gamma 0.99
+Version: B75689 (SC2.4.10)
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 44093 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-gr4gz1fd/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 41701 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-y01qc_fw/'
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 42333 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-950kg36x/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 34943 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-kewxxgon/'
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 45357 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-_jdmc1tw/'
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 41279 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-xlqeu05h/'
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 33043 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-39kvx48n/'
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 39147 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-vh4bwc4o/'
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Starting up...
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:41279
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:33043
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:42333
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:44093
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:45357
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:39147
+Listening on: 127.0.0.1:41701
+Startup Phase 3 complete. Ready for commands.
+Startup Phase 3 complete. Ready for commands.
+Listening on: 127.0.0.1:34943
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:49202 accepted
+ConnectHandler: Request from 127.0.0.1:56432 accepted
+ReadyHandler: 127.0.0.1:56432 ready
+ReadyHandler: 127.0.0.1:49202 ready
+ConnectHandler: Request from 127.0.0.1:56254 accepted
+ConnectHandler: Request from 127.0.0.1:37930 accepted
+ConnectHandler: Request from 127.0.0.1:47626 accepted
+ReadyHandler: 127.0.0.1:56254 ready
+ReadyHandler: 127.0.0.1:37930 ready
+ReadyHandler: 127.0.0.1:47626 ready
+ConnectHandler: Request from 127.0.0.1:47848 accepted
+ReadyHandler: 127.0.0.1:47848 ready
+ConnectHandler: Request from 127.0.0.1:43368 accepted
+ReadyHandler: 127.0.0.1:43368 ready
+ConnectHandler: Request from 127.0.0.1:52524 accepted
+ReadyHandler: 127.0.0.1:52524 ready
+Requesting to join a single player game
+Configuring interface options
+Requesting to join a single player game
+Configure: raw interface enabled
+Configuring interface options
+Configure: feature layer interface disabled
+Requesting to join a single player game
+Configure: score interface disabled
+Configure: raw interface enabled
+Configuring interface options
+Configure: render interface disabled
+Configure: raw interface enabled
+Requesting to join a single player game
+Configure: feature layer interface disabled
+Requesting to join a single player game
+Configure: feature layer interface disabled
+Configuring interface options
+Configure: score interface disabled
+Configuring interface options
+Configure: score interface disabled
+Configure: render interface disabled
+Configure: raw interface enabled
+Configure: render interface disabled
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Configure: render interface disabled
+Launching next game.
+Launching next game.
+Launching next game.
+Launching next game.
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 4
+Next launch phase started: 4
+Next launch phase started: 4
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 5
+Next launch phase started: 7
+Next launch phase started: 8
+Next launch phase started: 6
+Next launch phase started: 8
+Next launch phase started: 5
+Next launch phase started: 7
+Next launch phase started: 6
+Next launch phase started: 8
+Next launch phase started: 7
+Next launch phase started: 8
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Sending ResponseJoinGame
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 0/208 episodes, total num timesteps 480/100000, FPS 513.
+
+incre win rate is 0.0.
+some episodes done, average rewards:  1.517386722866175
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 36301 -dataDir /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/ -tempDir /tmp/sc-cgashc0r/'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Creating stub renderer...
+Listening on: 127.0.0.1:36301
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:35762 accepted
+ReadyHandler: 127.0.0.1:35762 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /home/user1/projects/amb-mapt-study/third_party/SC2/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+eval win rate is 0.0.
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 10/208 episodes, total num timesteps 5280/100000, FPS 303.
+
+incre win rate is 0.004761904761904762.
+some episodes done, average rewards:  4.49791542584872
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 20/208 episodes, total num timesteps 10080/100000, FPS 383.
+
+incre win rate is 0.07441860465116279.
+some episodes done, average rewards:  10.526315789473683
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 30/208 episodes, total num timesteps 14880/100000, FPS 420.
+
+incre win rate is 0.3300970873786408.
+some episodes done, average rewards:  13.92876712328767
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 40/208 episodes, total num timesteps 19680/100000, FPS 442.
+
+incre win rate is 0.4563106796116505.
+some episodes done, average rewards:  14.28767123287671
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 50/208 episodes, total num timesteps 24480/100000, FPS 456.
+
+incre win rate is 0.5124378109452736.
+some episodes done, average rewards:  12.931506849315067
+eval win rate is 0.6.
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 60/208 episodes, total num timesteps 29280/100000, FPS 460.
+
+incre win rate is 0.5654205607476636.
+some episodes done, average rewards:  13.34365693865396
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 70/208 episodes, total num timesteps 34080/100000, FPS 470.
+
+incre win rate is 0.6633165829145728.
+some episodes done, average rewards:  16.65255292652553
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 80/208 episodes, total num timesteps 38880/100000, FPS 477.
+
+incre win rate is 0.654639175257732.
+some episodes done, average rewards:  11.500761035007608
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 90/208 episodes, total num timesteps 43680/100000, FPS 483.
+
+incre win rate is 0.6956521739130435.
+some episodes done, average rewards:  15.793868232224398
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 100/208 episodes, total num timesteps 48480/100000, FPS 488.
+
+incre win rate is 0.5970149253731343.
+some episodes done, average rewards:  12.605783866057838
+eval win rate is 1.0.
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 110/208 episodes, total num timesteps 53280/100000, FPS 488.
+
+incre win rate is 0.43147208121827413.
+some episodes done, average rewards:  11.12876712328767
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 120/208 episodes, total num timesteps 58080/100000, FPS 491.
+
+incre win rate is 0.3756345177664975.
+some episodes done, average rewards:  12.112633181126332
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 130/208 episodes, total num timesteps 62880/100000, FPS 493.
+
+incre win rate is 0.5467980295566502.
+some episodes done, average rewards:  12.358904109589039
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 140/208 episodes, total num timesteps 67680/100000, FPS 495.
+
+incre win rate is 0.6180904522613065.
+some episodes done, average rewards:  15.592085235920852
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 150/208 episodes, total num timesteps 72480/100000, FPS 498.
+
+incre win rate is 0.6414141414141414.
+some episodes done, average rewards:  15.759512937595126
+eval win rate is 0.6.
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 160/208 episodes, total num timesteps 77280/100000, FPS 497.
+
+incre win rate is 0.6568627450980392.
+some episodes done, average rewards:  16.08940158615717
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 170/208 episodes, total num timesteps 82080/100000, FPS 499.
+
+incre win rate is 0.7185929648241206.
+some episodes done, average rewards:  16.3896499238965
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 180/208 episodes, total num timesteps 86880/100000, FPS 500.
+
+incre win rate is 0.7871287128712872.
+some episodes done, average rewards:  18.81017612524462
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 190/208 episodes, total num timesteps 91680/100000, FPS 501.
+
+incre win rate is 0.75.
+some episodes done, average rewards:  15.682191780821915
+
+ Map 3m Algo mat Exp gt_mat_seed1_100k updates 200/208 episodes, total num timesteps 96480/100000, FPS 505.
+
+incre win rate is 0.7487437185929648.
+some episodes done, average rewards:  16.48401826484018
+eval win rate is 1.0.
+RequestQuit command received.
+RequestQuit command received.
+Closing Application...
+RequestQuit command received.
+RequestQuit command received.
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+RequestQuit command received.
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:47626 disconnected
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:47848 disconnected
+Closing Application...
+Closing Application...
+DataHandler: unable to parse websocket frame.
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:56254 disconnected
+CloseHandler: 127.0.0.1:37930 disconnected
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:49202 disconnected
+CloseHandler: 127.0.0.1:43368 disconnected
+CloseHandler: 127.0.0.1:52524 disconnected
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:56432 disconnected
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:35762 disconnected
+real 209.25
+user 525.76
+sys 34.86

@@ -1,0 +1,13 @@
+﻿run_id,method,seed,epoch,step,metric,value,tag
+mr_reward_seed1_3epoch,MR,1,0,0,eval_loss,0.6456963419914246,reward/eval_rf_loss
+mr_reward_seed1_3epoch,MR,1,1,1,eval_loss,0.609107494354248,reward/eval_rf_loss
+mr_reward_seed1_3epoch,MR,1,2,2,eval_loss,0.5746719241142273,reward/eval_rf_loss
+mr_reward_seed1_3epoch,MR,1,0,0,train_loss,0.7164480090141296,reward/rf_loss
+mr_reward_seed1_3epoch,MR,1,1,1,train_loss,0.6241506338119507,reward/rf_loss
+mr_reward_seed1_3epoch,MR,1,2,2,train_loss,0.5548787117004395,reward/rf_loss
+mapt_reward_seed1_3epoch,MAPT,1,0,0,eval_loss,0.06676535308361053,reward/eval_trans_loss
+mapt_reward_seed1_3epoch,MAPT,1,1,1,eval_loss,0.46525248885154724,reward/eval_trans_loss
+mapt_reward_seed1_3epoch,MAPT,1,2,2,eval_loss,1.225140929222107,reward/eval_trans_loss
+mapt_reward_seed1_3epoch,MAPT,1,0,0,train_loss,1.9820266962051392,reward/trans_loss
+mapt_reward_seed1_3epoch,MAPT,1,1,1,train_loss,0.21423228085041046,reward/trans_loss
+mapt_reward_seed1_3epoch,MAPT,1,2,2,train_loss,0.2154087871313095,reward/trans_loss

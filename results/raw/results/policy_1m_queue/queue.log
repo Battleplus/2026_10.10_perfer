@@ -1,0 +1,7 @@
+START model=gt budget_steps=1000000 started_at=2026-10-11T11:54:55+08:00 stdout=/home/user1/projects/amb-mapt-study/results/policy_gt_1m/gt_seed1_1m.stdout.log
+FINISH model=gt budget_steps=1000000 started_at=2026-10-11T11:54:55+08:00 finished_at=2026-10-11T12:26:31+08:00 exit_code=0
+START model=mr budget_steps=1000000 started_at=2026-10-11T12:26:31+08:00 stdout=/home/user1/projects/amb-mapt-study/results/policy_mr_1m/mr_seed1_1m.stdout.log
+FINISH model=mr budget_steps=1000000 started_at=2026-10-11T12:26:31+08:00 finished_at=2026-10-11T13:01:45+08:00 exit_code=0
+START model=mapt budget_steps=1000000 started_at=2026-10-11T13:01:45+08:00 stdout=/home/user1/projects/amb-mapt-study/results/policy_mapt_1m/mapt_seed1_1m.stdout.log
+FINISH model=mapt budget_steps=1000000 started_at=2026-10-11T13:01:45+08:00 finished_at=2026-10-11T13:40:39+08:00 exit_code=0
+QUEUE_COMPLETE budget_steps=1000000 finished_at=2026-10-11T13:40:39+08:00

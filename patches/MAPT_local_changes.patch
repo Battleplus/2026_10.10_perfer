@@ -1,0 +1,91 @@
+diff --git a/mat/algorithms/reward_model/models/MultiPrefTransformer.py b/mat/algorithms/reward_model/models/MultiPrefTransformer.py
+index b4b1edc..9b85c26 100644
+--- a/mat/algorithms/reward_model/models/MultiPrefTransformer.py
++++ b/mat/algorithms/reward_model/models/MultiPrefTransformer.py
+@@ -178,14 +178,53 @@ class MultiPrefTransformer(object):
+ 
+     ####################### my add method
+     def save_model(self, save_path, save_idx):
++        model_config = self.config.to_dict() if hasattr(self.config, 'to_dict') else dict(self.config)
+         torch.save({
++            'format_version': 2,
+             'reward_model': self.trans.state_dict(),
+             'seq_len': self.trans.max_episode_steps,
++            'model_config': model_config,
++            'model_meta': {
++                'observation_dim': self.trans.observation_dim,
++                'action_dim': self.trans.action_dim,
++                'n_agent': self.trans.n_agent,
++                'action_type': self.trans.action_type,
++            },
+         }, str(save_path) + "reward_model_" + str(save_idx) + ".pt")
+ 
+     def load_model(self, model_dir):
+-        model_state_dict = torch.load(model_dir, map_location=torch.device('cpu')) \
+-            if self.device == torch.device('cpu') else torch.load(model_dir)
++        model_state_dict = torch.load(model_dir, map_location='cpu')
++        saved_config = model_state_dict.get('model_config')
++        if saved_config is not None:
++            current_config = self.config.to_dict() if hasattr(self.config, 'to_dict') else dict(self.config)
++            config_keys = (
++                'embd_dim', 'pref_attn_embd_dim', 'n_layer', 'n_head', 'use_lstm',
++                'use_weighted_sum', 'agent_individual', 'add_obs_action',
++                'agent_layer_mlp', 'time_layer_mlp',
++            )
++            mismatches = {
++                key: (saved_config.get(key), current_config.get(key))
++                for key in config_keys
++                if key in saved_config and key in current_config
++                and saved_config[key] != current_config[key]
++            }
++            if mismatches:
++                raise ValueError('Reward checkpoint config mismatch: {}'.format(mismatches))
++        saved_meta = model_state_dict.get('model_meta')
++        if saved_meta is not None:
++            current_meta = {
++                'observation_dim': self.trans.observation_dim,
++                'action_dim': self.trans.action_dim,
++                'n_agent': self.trans.n_agent,
++                'action_type': self.trans.action_type,
++            }
++            mismatches = {
++                key: (saved_meta.get(key), current_meta[key])
++                for key in current_meta
++                if saved_meta.get(key) != current_meta[key]
++            }
++            if mismatches:
++                raise ValueError('Reward checkpoint model mismatch: {}'.format(mismatches))
+         self.trans.load_state_dict(model_state_dict['reward_model'])
+         print('--------------- load PrefTransformer -----------------')
+ 
+diff --git a/mat/algorithms/reward_model/models/encoder_decoder_divide.py b/mat/algorithms/reward_model/models/encoder_decoder_divide.py
+index 852a9c2..85dde04 100644
+--- a/mat/algorithms/reward_model/models/encoder_decoder_divide.py
++++ b/mat/algorithms/reward_model/models/encoder_decoder_divide.py
+@@ -51,7 +51,7 @@ class SelfAttention(nn.Module):
+             casual_mask = casual_mask.to(dtype=torch.bool)
+             attn_mask = ops.get_attention_mask(m, B)
+             # att = att.masked_fill(casual_mask == 0, float('-inf'))
+-            att = torch.where(casual_mask, att, -10000.0)
++            att = att.masked_fill(~casual_mask, -10000.0)
+             att = att + attn_mask
+         att = F.softmax(att, dim=-1)
+         if self.config.use_dropout:
+diff --git a/mat/utils/pref_reward_assistant.py b/mat/utils/pref_reward_assistant.py
+index 54c9fb3..b2d460e 100644
+--- a/mat/utils/pref_reward_assistant.py
++++ b/mat/utils/pref_reward_assistant.py
+@@ -228,11 +228,11 @@ class PrefRewardAssistant:
+         self.his_attn_masks = self.his_attn_masks * np.tile(
+             (1 - self.last_dones).reshape(-1, 1, 1), (1, *self.his_attn_masks.shape[1:]))
+         # self.his_next_obs: (n_rollout_threads, traj_length, num_agents, act_dim)
+-        start_obs = self.his_next_obs[:, -1]
++        start_obs = self.his_next_obs[:, -1].copy()
+         for i in range(self.his_next_obs.shape[0]):
+             if self.last_dones[i]:
+                 self.his_next_obs[i] = np.zeros_like(self.his_next_obs[i])
+-                self.his_next_obs[i, -1] = start_obs[-1]
++                self.his_next_obs[i, -1] = start_obs[i]
+ 
+ 
+ def update_trans_config(config, user_config):
